@@ -1,0 +1,30 @@
+# ModelInvoicePos
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**create** | [**OffsetDateTime**](OffsetDateTime.md) | creation date of the invoice position |  [optional]
+**update** | [**OffsetDateTime**](OffsetDateTime.md) | date the invoice position was last updated |  [optional]
+**invoice** | [**ModelInvoice**](ModelInvoice.md) |  |  [optional]
+**part** | [**ModelPart**](ModelPart.md) |  |  [optional]
+**quantity** | **Float** | the quantity of the product/part |  [optional]
+**price** | **Float** | the price of the product/part |  [optional]
+**name** | **String** | the name of the product/part |  [optional]
+**priority** | **Integer** |  |  [optional]
+**unity** | [**ModelUnity**](ModelUnity.md) |  |  [optional]
+**sevClient** | **Object** | sevClient is the unique id every customer has and is used in nearly all operations |  [optional]
+**positionNumber** | **Integer** |  |  [optional]
+**text** | **String** |  |  [optional]
+**discount** | **Float** | does not get filled, discount is handled in the discount_model |  [optional]
+**taxRate** | **Float** | tax rate in percent |  [optional]
+**temporary** | **Boolean** |  |  [optional]
+**sumNet** | **Float** |  |  [optional]
+**sumGross** | **Float** |  |  [optional]
+**sumDiscount** | **Float** | does not get filled, sumDiscount is handled in the discount_model |  [optional]
+**sumTax** | **Float** |  |  [optional]
+**sumNetAccounting** | **Float** | equals sumNet |  [optional]
+**sumTaxAccounting** | **Float** | equals sumTax |  [optional]
+**sumGrossAccounting** | **Float** | equals sumGross |  [optional]
+**priceNet** | **Float** | net price of the product/part (one) |  [optional]
+**priceGross** | **Float** | gross price of the product/part (one) |  [optional]
+**priceTax** | **Float** |  |  [optional]

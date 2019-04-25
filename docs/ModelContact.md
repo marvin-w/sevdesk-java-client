@@ -1,0 +1,32 @@
+# ModelContact
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**address** | [**ModelContactAddress**](ModelContactAddress.md) |  |  [optional]
+**create** | [**OffsetDateTime**](OffsetDateTime.md) | the creation date of the contact |  [optional]
+**update** | [**OffsetDateTime**](OffsetDateTime.md) | date, the contact was last updated |  [optional]
+**name** | **String** | name of the contact |  [optional]
+**status** | **Integer** | status of the contact |  [optional]
+**customerNumber** | **Integer** | customer number of the contact |  [optional]
+**parent** | [**ModelContact**](ModelContact.md) |  |  [optional]
+**surename** | **String** | surname of the contact |  [optional]
+**familyname** | **String** | family name of the contact |  [optional]
+**titel** | **String** | title of the contact |  [optional]
+**category** | [**ModelCategory**](ModelCategory.md) |  |  [optional]
+**description** | **String** | description of the contact |  [optional]
+**academicTitle** | **String** | any academic title of the contact |  [optional]
+**gender** | **String** | gender of the contact |  [optional]
+**sevClient** | **Object** | sevClient is the unique id every customer has and is used in nearly all operations |  [optional]
+**name2** | **String** | second name of the contact |  [optional]
+**birthday** | [**OffsetDateTime**](OffsetDateTime.md) | birthday of the contact |  [optional]
+**vatNumber** | **String** | vat number of the contact |  [optional]
+**bankAccount** | **String** | bank account of the contact |  [optional]
+**bankNumber** | **String** | bank number of the contact |  [optional]
+**paymentMethod** | [**ModelPaymentMethod**](ModelPaymentMethod.md) |  |  [optional]
+**entryType** | [**ModelEntryType**](ModelEntryType.md) |  |  [optional]
+**defaultCashbackTime** | **Integer** | default cashback time of the contact |  [optional]
+**defaultCashbackPercent** | **Integer** | default cashback percentage of the contact |  [optional]
+**defaultTimeToPay** | **Integer** | default time to pay of the contact |  [optional]
+**taxNumber** | **String** | tax number of the contact |  [optional]
+**taxOffice** | **String** | tax office of the contact |  [optional]

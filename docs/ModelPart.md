@@ -1,0 +1,31 @@
+# ModelPart
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**create** | [**OffsetDateTime**](OffsetDateTime.md) | date the part was created |  [optional]
+**update** | [**OffsetDateTime**](OffsetDateTime.md) | date the part was last updated |  [optional]
+**name** | **String** | name of the part |  [optional]
+**partNumber** | **String** |  |  [optional]
+**text** | **String** |  |  [optional]
+**category** | [**ModelCategory**](ModelCategory.md) |  |  [optional]
+**stock** | **Float** |  |  [optional]
+**unity** | [**ModelUnity**](ModelUnity.md) |  |  [optional]
+**pricePartner** | **Float** | price for a partner. Can be added via the options in the inventory where the part is displayed |  [optional]
+**priceCustomer** | **Float** | price for a customer. Can be added via the options in the inventory where the part is displayed |  [optional]
+**price** | **Float** | price of the part |  [optional]
+**secondUnity** | [**ModelUnity**](ModelUnity.md) |  |  [optional]
+**secondUnityFactor** | **Float** | factor for the second unity resulting in a new sumNet for the secondUnity |  [optional]
+**sevClient** | **Object** | sevClient is the unique id every customer has and is used in nearly all operations |  [optional]
+**pricePurchase** | **Float** |  |  [optional]
+**taxRate** | **Float** |  |  [optional]
+**image** | **String** |  |  [optional]
+**status** | **Integer** |  |  [optional]
+**characteristics** | **String** | characteristics of the part |  [optional]
+**origin** | [**ModelPart**](ModelPart.md) |  |  [optional]
+**characteristicsString** | **String** |  |  [optional]
+**internalComment** | **String** |  |  [optional]
+**entryType** | [**ModelEntryType**](ModelEntryType.md) |  |  [optional]
+**accountingType** | [**ModelAccountingType**](ModelAccountingType.md) |  |  [optional]
+**priceNet** | **Float** |  |  [optional]
+**priceGross** | **Float** |  |  [optional]
