@@ -396,49 +396,7 @@ if (file != null)
 
     apiClient.invokeAPI(localVarPath, "POST", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, null);
   }
-  /**
-   * Test a letter paper
-   * Calls testLetterpaper() in DocServer.php to test your letter paper by providing the pdf.
-   * @param file  (required)
-   * @throws ApiException if fails to make API call
-   * @deprecated
-   */
-  @Deprecated
-  public void docServerTestLetterPaper(File file) throws ApiException {
-    Object localVarPostBody = null;
-    // verify the required parameter 'file' is set
-    if (file == null) {
-      throw new ApiException(400, "Missing the required parameter 'file' when calling docServerTestLetterPaper");
-    }
-    // create path and map variables
-    String localVarPath = "/DocServer/testLetterpaper".replaceAll("\\{format\\}","json");
 
-    // query params
-    List<Pair> localVarQueryParams = new ArrayList<Pair>();
-    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-
-    
-    if (file != null)
-      localVarFormParams.put("file", file);
-if (file != null)
-      localVarFormParams.put("file", file);
-
-    final String[] localVarAccepts = {
-      
-    };
-    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
-
-    final String[] localVarContentTypes = {
-      "application/x-www-form-urlencoded", "multipart/form-data"
-    };
-    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
-
-    String[] localVarAuthNames = new String[] { "api_key" };
-
-    apiClient.invokeAPI(localVarPath, "POST", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, null);
-  }
   /**
    * Test a template
    * Calls testTemplate() in DocServer.php to test your template by providing the html.
