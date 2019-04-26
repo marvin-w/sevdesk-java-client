@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelObjectUsed;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class ObjectUsedApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getObjectUsedTest() throws ApiException {
+    public void getObjectUsedTest() {
         Integer limit = null;
         Integer offset = null;
         ModelObjectUsed response = api.getObjectUsed(limit, offset);

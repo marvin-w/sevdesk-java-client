@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import org.junit.Test;
 import org.junit.Ignore;
 
@@ -38,7 +37,7 @@ public class SearchApiTest {
      *          if the Api call fails
      */
     @Test
-    public void searchTest() throws ApiException {
+    public void searchTest() {
         String embed = null;
         String term = null;
         List<String> searchType = null;

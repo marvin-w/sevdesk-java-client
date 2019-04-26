@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelAccountingSystemNumber;
 import de.wichmann.sevdesk.model.ModelAccountingType;
 import org.junit.Test;
@@ -40,7 +39,7 @@ public class AccountingTypeApiTest {
      *          if the Api call fails
      */
     @Test
-    public void accountingTypeGetAccountingNumberTest() throws ApiException {
+    public void accountingTypeGetAccountingNumberTest() {
         Integer id = null;
         api.accountingTypeGetAccountingNumber(id);
 
@@ -55,7 +54,7 @@ public class AccountingTypeApiTest {
      *          if the Api call fails
      */
     @Test
-    public void accountingTypeGetAccountingNumberDepreciationTest() throws ApiException {
+    public void accountingTypeGetAccountingNumberDepreciationTest() {
         Integer id = null;
         api.accountingTypeGetAccountingNumberDepreciation(id);
 
@@ -70,7 +69,7 @@ public class AccountingTypeApiTest {
      *          if the Api call fails
      */
     @Test
-    public void accountingTypeGetAccountingSystemNumberTest() throws ApiException {
+    public void accountingTypeGetAccountingSystemNumberTest() {
         Integer id = null;
         List<String> embed = null;
         ModelAccountingSystemNumber response = api.accountingTypeGetAccountingSystemNumber(id, embed);
@@ -86,7 +85,7 @@ public class AccountingTypeApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addAccountingTypeTest() throws ApiException {
+    public void addAccountingTypeTest() {
         ModelAccountingType response = api.addAccountingType();
 
         // TODO: test validations
@@ -100,7 +99,7 @@ public class AccountingTypeApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addAccountingTypeFactoryTest() throws ApiException {
+    public void addAccountingTypeFactoryTest() {
         ModelAccountingType response = api.addAccountingTypeFactory();
 
         // TODO: test validations
@@ -114,7 +113,7 @@ public class AccountingTypeApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteAccountingTypeTest() throws ApiException {
+    public void deleteAccountingTypeTest() {
         Integer id = null;
         api.deleteAccountingType(id);
 
@@ -129,7 +128,7 @@ public class AccountingTypeApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getAccountingTypesTest() throws ApiException {
+    public void getAccountingTypesTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -146,7 +145,7 @@ public class AccountingTypeApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateAccountingTypeTest() throws ApiException {
+    public void updateAccountingTypeTest() {
         Integer id = null;
         ModelAccountingType response = api.updateAccountingType(id);
 

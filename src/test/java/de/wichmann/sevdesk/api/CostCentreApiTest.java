@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelCostCentre;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class CostCentreApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addCostCentreTest() throws ApiException {
+    public void addCostCentreTest() {
         ModelCostCentre response = api.addCostCentre();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class CostCentreApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteCostCentreTest() throws ApiException {
+    public void deleteCostCentreTest() {
         Integer id = null;
         api.deleteCostCentre(id);
 
@@ -68,7 +67,7 @@ public class CostCentreApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getCostCentreTest() throws ApiException {
+    public void getCostCentreTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class CostCentreApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateCostCentreTest() throws ApiException {
+    public void updateCostCentreTest() {
         Integer id = null;
         ModelCostCentre response = api.updateCostCentre(id);
 

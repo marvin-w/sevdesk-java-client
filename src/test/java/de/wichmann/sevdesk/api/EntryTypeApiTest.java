@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelEntryType;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class EntryTypeApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addEntryTypeTest() throws ApiException {
+    public void addEntryTypeTest() {
         ModelEntryType response = api.addEntryType();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class EntryTypeApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteEntryTypeTest() throws ApiException {
+    public void deleteEntryTypeTest() {
         Integer id = null;
         api.deleteEntryType(id);
 
@@ -68,7 +67,7 @@ public class EntryTypeApiTest {
      *          if the Api call fails
      */
     @Test
-    public void entryTypeDeleteReferencedObjectsTest() throws ApiException {
+    public void entryTypeDeleteReferencedObjectsTest() {
         Integer id = null;
         api.entryTypeDeleteReferencedObjects(id);
 
@@ -83,7 +82,7 @@ public class EntryTypeApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getEntryTypesTest() throws ApiException {
+    public void getEntryTypesTest() {
         Integer limit = null;
         Integer offset = null;
         ModelEntryType response = api.getEntryTypes(limit, offset);
@@ -99,7 +98,7 @@ public class EntryTypeApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateEntryTypeTest() throws ApiException {
+    public void updateEntryTypeTest() {
         Integer id = null;
         ModelEntryType response = api.updateEntryType(id);
 

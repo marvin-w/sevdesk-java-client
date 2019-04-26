@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelAccountingCorrection;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class AccountingCorrectionApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addAccountingCorrectionTest() throws ApiException {
+    public void addAccountingCorrectionTest() {
         ModelAccountingCorrection response = api.addAccountingCorrection();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class AccountingCorrectionApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteAccountingCorrectionTest() throws ApiException {
+    public void deleteAccountingCorrectionTest() {
         Integer id = null;
         api.deleteAccountingCorrection(id);
 
@@ -68,7 +67,7 @@ public class AccountingCorrectionApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getAccountingCorrectionsTest() throws ApiException {
+    public void getAccountingCorrectionsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class AccountingCorrectionApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateAccountingCorrectionTest() throws ApiException {
+    public void updateAccountingCorrectionTest() {
         Integer id = null;
         ModelAccountingCorrection response = api.updateAccountingCorrection(id);
 

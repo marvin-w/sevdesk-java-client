@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelInvoicePos;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class InvoicePosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addInvoicePosTest() throws ApiException {
+    public void addInvoicePosTest() {
         ModelInvoicePos response = api.addInvoicePos();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class InvoicePosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteInvoicePosTest() throws ApiException {
+    public void deleteInvoicePosTest() {
         Integer id = null;
         api.deleteInvoicePos(id);
 
@@ -68,7 +67,7 @@ public class InvoicePosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getInvoicePositionsTest() throws ApiException {
+    public void getInvoicePositionsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class InvoicePosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateInvoicePosTest() throws ApiException {
+    public void updateInvoicePosTest() {
         Integer id = null;
         ModelInvoicePos response = api.updateInvoicePos(id);
 

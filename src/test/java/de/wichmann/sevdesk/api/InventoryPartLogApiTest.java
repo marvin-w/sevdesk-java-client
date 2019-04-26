@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelInventoryPartLog;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class InventoryPartLogApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addInventoryPartLogTest() throws ApiException {
+    public void addInventoryPartLogTest() {
         ModelInventoryPartLog response = api.addInventoryPartLog();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class InventoryPartLogApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteInventoryPartLogTest() throws ApiException {
+    public void deleteInventoryPartLogTest() {
         Integer id = null;
         api.deleteInventoryPartLog(id);
 
@@ -68,7 +67,7 @@ public class InventoryPartLogApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getInventoryPartLogTest() throws ApiException {
+    public void getInventoryPartLogTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class InventoryPartLogApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getInventoryPartLogStockTest() throws ApiException {
+    public void getInventoryPartLogStockTest() {
         Integer id = null;
         api.getInventoryPartLogStock(id);
 
@@ -100,7 +99,7 @@ public class InventoryPartLogApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateInventoryPartLogTest() throws ApiException {
+    public void updateInventoryPartLogTest() {
         Integer id = null;
         ModelInventoryPartLog response = api.updateInventoryPartLog(id);
 

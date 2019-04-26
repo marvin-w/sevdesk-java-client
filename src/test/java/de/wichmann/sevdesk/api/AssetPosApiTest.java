@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelAssetPos;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class AssetPosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addAssetPosTest() throws ApiException {
+    public void addAssetPosTest() {
         ModelAssetPos response = api.addAssetPos();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class AssetPosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteAssetPositionTest() throws ApiException {
+    public void deleteAssetPositionTest() {
         Integer id = null;
         api.deleteAssetPosition(id);
 
@@ -68,7 +67,7 @@ public class AssetPosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getAssetPositionsTest() throws ApiException {
+    public void getAssetPositionsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class AssetPosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateAssetPositionTest() throws ApiException {
+    public void updateAssetPositionTest() {
         Integer id = null;
         ModelAssetPos response = api.updateAssetPosition(id);
 

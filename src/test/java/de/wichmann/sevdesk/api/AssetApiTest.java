@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelAsset;
 import de.wichmann.sevdesk.model.ModelVoucher;
 import org.junit.Test;
@@ -40,7 +39,7 @@ public class AssetApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addAssetTest() throws ApiException {
+    public void addAssetTest() {
         ModelAsset response = api.addAsset();
 
         // TODO: test validations
@@ -54,7 +53,7 @@ public class AssetApiTest {
      *          if the Api call fails
      */
     @Test
-    public void assetGetDepreciationAmountTest() throws ApiException {
+    public void assetGetDepreciationAmountTest() {
         Integer id = null;
         String year = null;
         String month = null;
@@ -71,7 +70,7 @@ public class AssetApiTest {
      *          if the Api call fails
      */
     @Test
-    public void assetGetResidualValueTest() throws ApiException {
+    public void assetGetResidualValueTest() {
         Integer id = null;
         String year = null;
         String month = null;
@@ -88,7 +87,7 @@ public class AssetApiTest {
      *          if the Api call fails
      */
     @Test
-    public void assetGetVoucherTest() throws ApiException {
+    public void assetGetVoucherTest() {
         Integer id = null;
         List<String> embed = null;
         ModelVoucher response = api.assetGetVoucher(id, embed);
@@ -104,7 +103,7 @@ public class AssetApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteAssetTest() throws ApiException {
+    public void deleteAssetTest() {
         Integer id = null;
         api.deleteAsset(id);
 
@@ -119,7 +118,7 @@ public class AssetApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getAssetsTest() throws ApiException {
+    public void getAssetsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -136,7 +135,7 @@ public class AssetApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateAssetTest() throws ApiException {
+    public void updateAssetTest() {
         Integer id = null;
         ModelAsset response = api.updateAsset(id);
 

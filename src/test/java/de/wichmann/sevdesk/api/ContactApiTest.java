@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelCommunicationWay;
 import de.wichmann.sevdesk.model.ModelContact;
 import de.wichmann.sevdesk.model.ModelContactAddress;
@@ -41,7 +40,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addAddressTest() throws ApiException {
+    public void addAddressTest() {
         Integer id = null;
         ModelContactAddress response = api.addAddress(id);
 
@@ -56,7 +55,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addContactTest() throws ApiException {
+    public void addContactTest() {
         ModelContact response = api.addContact();
 
         // TODO: test validations
@@ -70,7 +69,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addContactCommunicationWayTest() throws ApiException {
+    public void addContactCommunicationWayTest() {
         Integer id = null;
         String value = null;
         Integer key = null;
@@ -88,7 +87,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addMobileTest() throws ApiException {
+    public void addMobileTest() {
         Integer id = null;
         api.addMobile(id);
 
@@ -103,7 +102,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addPhoneTest() throws ApiException {
+    public void addPhoneTest() {
         Integer id = null;
         api.addPhone(id);
 
@@ -118,7 +117,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addWebsiteTest() throws ApiException {
+    public void addWebsiteTest() {
         Integer id = null;
         api.addWebsite(id);
 
@@ -133,7 +132,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void contactAddEmailTest() throws ApiException {
+    public void contactAddEmailTest() {
         Integer id = null;
         api.contactAddEmail(id);
 
@@ -148,7 +147,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void contactFactoryCreateContactTest() throws ApiException {
+    public void contactFactoryCreateContactTest() {
         ModelContact response = api.contactFactoryCreateContact();
 
         // TODO: test validations
@@ -162,7 +161,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void contactGetAddressesTest() throws ApiException {
+    public void contactGetAddressesTest() {
         Integer id = null;
         Integer categoryId = null;
         String categoryObjectName = null;
@@ -179,7 +178,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteContactTest() throws ApiException {
+    public void deleteContactTest() {
         Integer id = null;
         api.deleteContact(id);
 
@@ -194,7 +193,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getContactBillingAddressTest() throws ApiException {
+    public void getContactBillingAddressTest() {
         Integer id = null;
         ModelContactAddress response = api.getContactBillingAddress(id);
 
@@ -209,7 +208,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getContactBillingEmailTest() throws ApiException {
+    public void getContactBillingEmailTest() {
         Integer id = null;
         ModelCommunicationWay response = api.getContactBillingEmail(id);
 
@@ -224,7 +223,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getContactCommunicationWaysTest() throws ApiException {
+    public void getContactCommunicationWaysTest() {
         Integer id = null;
         String type = null;
         ModelCommunicationWay response = api.getContactCommunicationWays(id, type);
@@ -240,7 +239,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getContactMainAddressTest() throws ApiException {
+    public void getContactMainAddressTest() {
         Integer id = null;
         ModelContactAddress response = api.getContactMainAddress(id);
 
@@ -255,7 +254,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getContactMainEmailTest() throws ApiException {
+    public void getContactMainEmailTest() {
         Integer id = null;
         ModelCommunicationWay response = api.getContactMainEmail(id);
 
@@ -270,7 +269,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getContactMainMobileTest() throws ApiException {
+    public void getContactMainMobileTest() {
         Integer id = null;
         ModelCommunicationWay response = api.getContactMainMobile(id);
 
@@ -285,7 +284,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getContactMainPhoneTest() throws ApiException {
+    public void getContactMainPhoneTest() {
         Integer id = null;
         ModelCommunicationWay response = api.getContactMainPhone(id);
 
@@ -300,7 +299,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getContactMainWebsiteTest() throws ApiException {
+    public void getContactMainWebsiteTest() {
         Integer id = null;
         ModelCommunicationWay response = api.getContactMainWebsite(id);
 
@@ -315,7 +314,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getContactRelatedCommunicationWaysTest() throws ApiException {
+    public void getContactRelatedCommunicationWaysTest() {
         Integer id = null;
         String type = null;
         ModelCommunicationWay response = api.getContactRelatedCommunicationWays(id, type);
@@ -331,7 +330,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getContactTabsItemCountTest() throws ApiException {
+    public void getContactTabsItemCountTest() {
         Integer id = null;
         api.getContactTabsItemCount(id);
 
@@ -346,7 +345,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getContactsTest() throws ApiException {
+    public void getContactsTest() {
         Integer depth = null;
         Integer limit = null;
         Integer offset = null;
@@ -364,7 +363,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getNextCustomerNumberTest() throws ApiException {
+    public void getNextCustomerNumberTest() {
         api.getNextCustomerNumber();
 
         // TODO: test validations
@@ -378,7 +377,7 @@ public class ContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateContactTest() throws ApiException {
+    public void updateContactTest() {
         Integer id = null;
         ModelContact response = api.updateContact(id);
 

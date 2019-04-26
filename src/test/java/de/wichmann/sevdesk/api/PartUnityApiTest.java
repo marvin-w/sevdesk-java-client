@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelPartUnity;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class PartUnityApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addPartUnityTest() throws ApiException {
+    public void addPartUnityTest() {
         ModelPartUnity response = api.addPartUnity();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class PartUnityApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deletePartUnityTest() throws ApiException {
+    public void deletePartUnityTest() {
         Integer id = null;
         api.deletePartUnity(id);
 
@@ -68,7 +67,7 @@ public class PartUnityApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getPartUnitiesTest() throws ApiException {
+    public void getPartUnitiesTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class PartUnityApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updatePartUnityTest() throws ApiException {
+    public void updatePartUnityTest() {
         Integer id = null;
         ModelPartUnity response = api.updatePartUnity(id);
 

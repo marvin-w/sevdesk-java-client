@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelAsset;
 import de.wichmann.sevdesk.model.ModelVoucherPos;
 import org.junit.Test;
@@ -40,7 +39,7 @@ public class VoucherPosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addVoucherPosTest() throws ApiException {
+    public void addVoucherPosTest() {
         ModelVoucherPos response = api.addVoucherPos();
 
         // TODO: test validations
@@ -54,7 +53,7 @@ public class VoucherPosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteVoucherPosTest() throws ApiException {
+    public void deleteVoucherPosTest() {
         Integer id = null;
         api.deleteVoucherPos(id);
 
@@ -69,7 +68,7 @@ public class VoucherPosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getVoucherPositionsTest() throws ApiException {
+    public void getVoucherPositionsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -86,7 +85,7 @@ public class VoucherPosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateVoucherPosTest() throws ApiException {
+    public void updateVoucherPosTest() {
         Integer id = null;
         ModelVoucherPos response = api.updateVoucherPos(id);
 
@@ -101,7 +100,7 @@ public class VoucherPosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherPosGetAdditionalInformationTest() throws ApiException {
+    public void voucherPosGetAdditionalInformationTest() {
         Integer id = null;
         api.voucherPosGetAdditionalInformation(id);
 
@@ -116,7 +115,7 @@ public class VoucherPosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherPosGetAssetInstanceTest() throws ApiException {
+    public void voucherPosGetAssetInstanceTest() {
         Integer id = null;
         ModelAsset response = api.voucherPosGetAssetInstance(id);
 

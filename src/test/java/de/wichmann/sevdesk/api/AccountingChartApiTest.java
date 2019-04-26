@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelAccountingChart;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class AccountingChartApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addAccountingChartTest() throws ApiException {
+    public void addAccountingChartTest() {
         ModelAccountingChart response = api.addAccountingChart();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class AccountingChartApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteAccountingChartTest() throws ApiException {
+    public void deleteAccountingChartTest() {
         Integer id = null;
         api.deleteAccountingChart(id);
 
@@ -68,7 +67,7 @@ public class AccountingChartApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getAccountingChartTest() throws ApiException {
+    public void getAccountingChartTest() {
         Integer limit = null;
         Integer offset = null;
         ModelAccountingChart response = api.getAccountingChart(limit, offset);
@@ -84,7 +83,7 @@ public class AccountingChartApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateAccountingChartTest() throws ApiException {
+    public void updateAccountingChartTest() {
         Integer id = null;
         ModelAccountingChart response = api.updateAccountingChart(id);
 

@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import java.io.File;
 import de.wichmann.sevdesk.model.ModelAccountingType;
 import de.wichmann.sevdesk.model.ModelVoucher;
@@ -43,7 +42,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addVoucherTest() throws ApiException {
+    public void addVoucherTest() {
         ModelVoucher response = api.addVoucher();
 
         // TODO: test validations
@@ -57,7 +56,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteVoucherTest() throws ApiException {
+    public void deleteVoucherTest() {
         Integer id = null;
         api.deleteVoucher(id);
 
@@ -72,7 +71,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getVouchersTest() throws ApiException {
+    public void getVouchersTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -89,7 +88,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void saveVoucherTest() throws ApiException {
+    public void saveVoucherTest() {
         ModelVoucherFactory response = api.saveVoucher();
 
         // TODO: test validations
@@ -103,7 +102,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateVoucherTest() throws ApiException {
+    public void updateVoucherTest() {
         Integer id = null;
         ModelVoucher response = api.updateVoucher(id);
 
@@ -118,7 +117,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherBookAmountTest() throws ApiException {
+    public void voucherBookAmountTest() {
         Integer id = null;
         api.voucherBookAmount(id);
 
@@ -133,7 +132,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherChangeStatusTest() throws ApiException {
+    public void voucherChangeStatusTest() {
         Integer id = null;
         api.voucherChangeStatus(id);
 
@@ -148,7 +147,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherDeleteDocumentTest() throws ApiException {
+    public void voucherDeleteDocumentTest() {
         Integer id = null;
         api.voucherDeleteDocument(id);
 
@@ -163,7 +162,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherExtractThumbTest() throws ApiException {
+    public void voucherExtractThumbTest() {
         String fileName = null;
         api.voucherExtractThumb(fileName);
 
@@ -178,7 +177,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherGetAccountingTypesTest() throws ApiException {
+    public void voucherGetAccountingTypesTest() {
         Integer id = null;
         List<String> embed = null;
         ModelAccountingType response = api.voucherGetAccountingTypes(id, embed);
@@ -194,7 +193,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherGetCheckAccountTransactionLogsTest() throws ApiException {
+    public void voucherGetCheckAccountTransactionLogsTest() {
         Integer id = null;
         List<String> embed = null;
         api.voucherGetCheckAccountTransactionLogs(id, embed);
@@ -210,7 +209,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherGetCheckAccountTransactionsTest() throws ApiException {
+    public void voucherGetCheckAccountTransactionsTest() {
         Integer id = null;
         List<String> embed = null;
         api.voucherGetCheckAccountTransactions(id, embed);
@@ -226,7 +225,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherGetCurrencyTest() throws ApiException {
+    public void voucherGetCurrencyTest() {
         Integer id = null;
         api.voucherGetCurrency(id);
 
@@ -241,7 +240,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherGetDebitTest() throws ApiException {
+    public void voucherGetDebitTest() {
         Integer id = null;
         api.voucherGetDebit(id);
 
@@ -256,7 +255,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherGetDelinquentTest() throws ApiException {
+    public void voucherGetDelinquentTest() {
         Integer id = null;
         api.voucherGetDelinquent(id);
 
@@ -271,7 +270,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherGetDependingRecurringVouchersTest() throws ApiException {
+    public void voucherGetDependingRecurringVouchersTest() {
         Integer id = null;
         List<String> embed = null;
         ModelVoucher response = api.voucherGetDependingRecurringVouchers(id, embed);
@@ -287,7 +286,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherGetDocumentImageTest() throws ApiException {
+    public void voucherGetDocumentImageTest() {
         Integer id = null;
         api.voucherGetDocumentImage(id);
 
@@ -302,7 +301,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherGetTaxGroupsTest() throws ApiException {
+    public void voucherGetTaxGroupsTest() {
         Integer id = null;
         Boolean showTotalSum = null;
         Boolean withCorrections = null;
@@ -319,7 +318,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherMarkAsOpenTest() throws ApiException {
+    public void voucherMarkAsOpenTest() {
         Integer id = null;
         ModelVoucher response = api.voucherMarkAsOpen(id);
 
@@ -334,7 +333,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherMarkAsPaidTest() throws ApiException {
+    public void voucherMarkAsPaidTest() {
         Integer id = null;
         ModelVoucher response = api.voucherMarkAsPaid(id);
 
@@ -349,7 +348,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherRefundAmountTest() throws ApiException {
+    public void voucherRefundAmountTest() {
         Integer id = null;
         ModelVoucherLog response = api.voucherRefundAmount(id);
 
@@ -364,7 +363,7 @@ public class VoucherApiTest {
      *          if the Api call fails
      */
     @Test
-    public void voucherUploadTempFileTest() throws ApiException {
+    public void voucherUploadTempFileTest() {
         File file = null;
         ModelVoucherFactory response = api.voucherUploadTempFile(file);
 

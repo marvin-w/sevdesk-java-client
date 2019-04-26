@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelVoucherLog;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class VoucherLogApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addVoucherLogEntryTest() throws ApiException {
+    public void addVoucherLogEntryTest() {
         ModelVoucherLog response = api.addVoucherLogEntry();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class VoucherLogApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteVoucherLogEntryTest() throws ApiException {
+    public void deleteVoucherLogEntryTest() {
         Integer id = null;
         api.deleteVoucherLogEntry(id);
 
@@ -68,7 +67,7 @@ public class VoucherLogApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getVoucherLogTest() throws ApiException {
+    public void getVoucherLogTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class VoucherLogApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateVoucherLogEntryTest() throws ApiException {
+    public void updateVoucherLogEntryTest() {
         Integer id = null;
         ModelVoucherLog response = api.updateVoucherLogEntry(id);
 

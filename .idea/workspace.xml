@@ -1,0 +1,1855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5f10df15-0cd2-430d-8067-6a1a72e743f5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/TestApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/jackson/NumericBooleanDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/jackson/NumericBooleanSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.swagger-codegen/VERSION" beforeDir="false" afterPath="$PROJECT_DIR$/.swagger-codegen/VERSION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/ApiException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/Configuration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/JSON.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/StringUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AccountingChartApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AccountingChartApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AccountingContactApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AccountingContactApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AccountingCorrectionApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AccountingCorrectionApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AccountingIndexApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AccountingIndexApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AccountingSystemApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AccountingSystemApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AccountingSystemNumberApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AccountingSystemNumberApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AccountingTypeApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AccountingTypeApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AggregatorApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AggregatorApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AssetApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AssetApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AssetPosApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AssetPosApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/CategoryApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/CategoryApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/CheckAccountApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/CheckAccountApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/CheckAccountTransactionApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/CheckAccountTransactionApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/CheckAccountTransactionLogApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/CheckAccountTransactionLogApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/CommunicationWayApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/CommunicationWayApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/CommunicationWayKeyApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/CommunicationWayKeyApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/ContactAddressApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/ContactAddressApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/ContactApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/ContactApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/CostCentreApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/CostCentreApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/CurrencyExchangeRateApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/CurrencyExchangeRateApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/DiscountsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/DiscountsApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/DocServerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/DocServerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/DocumentApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/DocumentApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/DocumentFolderApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/DocumentFolderApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/DocumentIndexApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/DocumentIndexApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/EmailApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/EmailApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/EntryTypeApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/EntryTypeApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/ExportApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/ExportApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/FeedApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/FeedApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/HelpApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/HelpApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/InventoryPartLogApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/InventoryPartLogApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/InvoiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/InvoiceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/InvoiceLogApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/InvoiceLogApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/InvoicePosApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/InvoicePosApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/LetterApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/LetterApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/ObjectUsedApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/ObjectUsedApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/ObjectViewedApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/ObjectViewedApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/OrderApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/OrderApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/OrderLogApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/OrderLogApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/OrderPosApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/OrderPosApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/PartApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/PartApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/PartContactPriceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/PartContactPriceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/PartUnityApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/PartUnityApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/PaymentMethodApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/PaymentMethodApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/PlaceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/PlaceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/ReportApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/ReportApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SearchApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SearchApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SevClientApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SevClientApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SevClientConfigApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SevClientConfigApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SevSequenceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SevSequenceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SevTokenApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SevTokenApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SevUserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SevUserApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/StaticCountryApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/StaticCountryApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/StaticReferralProgramApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/StaticReferralProgramApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SubscriptionHistoryApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SubscriptionHistoryApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SubscriptionTypeApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SubscriptionTypeApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SwissEsrApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/SwissEsrApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/TagApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/TagApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/TagRelationApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/TagRelationApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/TaskApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/TaskApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/TaxSetApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/TaxSetApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/TextTemplateApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/TextTemplateApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/UnityApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/UnityApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/VatReportApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/VatReportApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/VoucherApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/VoucherApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/VoucherLogApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/VoucherLogApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/VoucherPosApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/VoucherPosApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/auth/ApiKeyAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/auth/ApiKeyAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/auth/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/auth/Authentication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/auth/HttpBasicAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/auth/HttpBasicAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/auth/OAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/auth/OAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/auth/OAuthFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/auth/OAuthFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAccountingChart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAccountingChart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAccountingContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAccountingContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAccountingCorrection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAccountingCorrection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAccountingIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAccountingIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAccountingSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAccountingSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAccountingSystemNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAccountingSystemNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAccountingType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAccountingType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAccountingTypeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAccountingTypeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAggregator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAggregator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAsset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAsset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAssetPos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAssetPos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelCheckAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelCheckAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelCheckAccountTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelCheckAccountTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelCheckAccountTransactionLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelCheckAccountTransactionLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelCommunicationWay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelCommunicationWay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelCommunicationWayKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelCommunicationWayKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelContactAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelContactAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelContactFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelContactFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelCostCentre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelCostCentre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelCurrencyExchangeRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelCurrencyExchangeRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelDiscounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelDiscounts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelDocServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelDocServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelDocumentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelDocumentFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelDocumentFolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelDocumentFolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelDocumentIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelDocumentIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelEntryType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelEntryType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelExport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelExport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelFeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelFeed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelHelp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelInventoryPartLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelInventoryPartLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelInvoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelInvoiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelInvoiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelInvoiceLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelInvoiceLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelInvoicePos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelInvoicePos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelLetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelLetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelObjectUsed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelObjectUsed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelObjectViewed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelObjectViewed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelOrderLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelOrderLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelOrderPos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelOrderPos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelPart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelPartContactPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelPartContactPrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelPartUnity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelPartUnity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelPaymentMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelPaymentMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelPlace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSevClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSevClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSevClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSevClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSevQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSevQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSevSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSevSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSevToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSevToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSevUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSevUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelStaticCountry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelStaticCountry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelStaticIndustry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelStaticIndustry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelStaticReferralProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelStaticReferralProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSubscriptionHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSubscriptionHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSubscriptionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSubscriptionType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSwissEsr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSwissEsr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelTag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelTagRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelTagRelation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelTaxSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelTaxSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelTextTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelTextTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelUnity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelUnity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelVatReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelVatReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelVoucher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelVoucher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelVoucherFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelVoucherFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelVoucherLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelVoucherLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelVoucherPos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelVoucherPos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AccountingChartApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AccountingChartApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AccountingContactApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AccountingContactApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AccountingCorrectionApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AccountingCorrectionApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AccountingIndexApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AccountingIndexApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AccountingSystemApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AccountingSystemApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AccountingSystemNumberApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AccountingSystemNumberApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AccountingTypeApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AccountingTypeApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AggregatorApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AggregatorApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AssetApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AssetApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AssetPosApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/AssetPosApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/CategoryApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/CategoryApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/CheckAccountApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/CheckAccountApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/CheckAccountTransactionApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/CheckAccountTransactionApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/CheckAccountTransactionLogApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/CheckAccountTransactionLogApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/CommunicationWayApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/CommunicationWayApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/CommunicationWayKeyApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/CommunicationWayKeyApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/ContactAddressApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/ContactAddressApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/ContactApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/ContactApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/CostCentreApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/CostCentreApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/CurrencyExchangeRateApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/CurrencyExchangeRateApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/DiscountsApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/DiscountsApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/DocServerApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/DocServerApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/DocumentApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/DocumentApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/DocumentFolderApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/DocumentFolderApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/DocumentIndexApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/DocumentIndexApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/EmailApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/EmailApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/EntryTypeApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/EntryTypeApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/ExportApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/ExportApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/FeedApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/FeedApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/HelpApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/HelpApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/InventoryPartLogApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/InventoryPartLogApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/InvoiceApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/InvoiceApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/InvoiceLogApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/InvoiceLogApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/InvoicePosApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/InvoicePosApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/LetterApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/LetterApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/ObjectUsedApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/ObjectUsedApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/ObjectViewedApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/ObjectViewedApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/OrderApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/OrderApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/OrderLogApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/OrderLogApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/OrderPosApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/OrderPosApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/PartApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/PartApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/PartContactPriceApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/PartContactPriceApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/PartUnityApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/PartUnityApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/PaymentMethodApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/PaymentMethodApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/PlaceApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/PlaceApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/ReportApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/ReportApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SearchApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SearchApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SevClientApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SevClientApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SevClientConfigApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SevClientConfigApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SevSequenceApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SevSequenceApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SevTokenApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SevTokenApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SevUserApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SevUserApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/StaticCountryApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/StaticCountryApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/StaticReferralProgramApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/StaticReferralProgramApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SubscriptionHistoryApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SubscriptionHistoryApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SubscriptionTypeApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SubscriptionTypeApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SwissEsrApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/SwissEsrApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/TagApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/TagApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/TagRelationApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/TagRelationApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/TaskApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/TaskApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/TaxSetApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/TaxSetApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/TextTemplateApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/TextTemplateApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/UnityApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/UnityApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/VatReportApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/VatReportApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/VoucherApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/VoucherApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/VoucherLogApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/VoucherLogApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/VoucherPosApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/wichmann/sevdesk/api/VoucherPosApiTest.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1620259619">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gitignore" value="1" />
+          <entry key="gradle" value="1" />
+          <entry key="java" value="36" />
+          <entry key="md" value="1" />
+          <entry key="swagger-codegen-ignore" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Groovy" value="1" />
+          <entry key="JAVA" value="36" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="gradle" value="48" />
+          <entry key="java" value="1187" />
+          <entry key="md" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Groovy" value="48" />
+          <entry key="JAVA" value="1187" />
+          <entry key="Markdown" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelInvoice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#6558#6559#0" expanded="true" />
+                <element signature="e#6585#6586#0" expanded="true" />
+                <element signature="e#4268#4269#0" expanded="true" />
+                <element signature="e#4284#4285#0" expanded="true" />
+                <element signature="e#4316#4317#0" expanded="true" />
+                <element signature="e#4335#4336#0" expanded="true" />
+                <element signature="e#32157#32158#0" expanded="true" />
+                <element signature="e#32218#32219#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSevUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="24" column="162" selection-start-line="24" selection-start-column="162" selection-end-line="24" selection-end-column="162" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/TestApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="32" column="38" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#1408#1409#0" expanded="true" />
+                <element signature="e#1426#1427#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.9.RELEASE/ac31864038a1c31d5a49c1bef84e5af4a162a655/spring-web-4.3.9.RELEASE-sources.jar!/org/springframework/web/client/DefaultResponseErrorHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/InvoiceApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+              <folding>
+                <element signature="e#1652#1653#0" expanded="true" />
+                <element signature="e#1689#1690#0" expanded="true" />
+                <element signature="e#1750#1751#0" expanded="true" />
+                <element signature="e#1792#1793#0" expanded="true" />
+                <element signature="e#1831#1832#0" expanded="true" />
+                <element signature="e#1863#1864#0" expanded="true" />
+                <element signature="e#1916#1917#0" expanded="true" />
+                <element signature="e#1958#1959#0" expanded="true" />
+                <element signature="e#2540#2556#0" expanded="true" />
+                <element signature="e#4293#4309#0" expanded="true" />
+                <element signature="e#4559#4575#0" expanded="true" />
+                <element signature="e#4719#4735#0" expanded="true" />
+                <element signature="e#6536#6552#0" expanded="true" />
+                <element signature="e#6696#6712#0" expanded="true" />
+                <element signature="e#8551#8567#0" expanded="true" />
+                <element signature="e#8711#8727#0" expanded="true" />
+                <element signature="e#10213#10229#0" expanded="true" />
+                <element signature="e#10472#10488#0" expanded="true" />
+                <element signature="e#10632#10648#0" expanded="true" />
+                <element signature="e#12068#12084#0" expanded="true" />
+                <element signature="e#12337#12353#0" expanded="true" />
+                <element signature="e#12497#12513#0" expanded="true" />
+                <element signature="e#14677#14693#0" expanded="true" />
+                <element signature="e#14837#14853#0" expanded="true" />
+                <element signature="e#16869#16885#0" expanded="true" />
+                <element signature="e#17135#17151#0" expanded="true" />
+                <element signature="e#17295#17311#0" expanded="true" />
+                <element signature="e#19458#19474#0" expanded="true" />
+                <element signature="e#19618#19634#0" expanded="true" />
+                <element signature="e#21577#21593#0" expanded="true" />
+                <element signature="e#21737#21753#0" expanded="true" />
+                <element signature="e#24088#24104#0" expanded="true" />
+                <element signature="e#24248#24264#0" expanded="true" />
+                <element signature="e#26057#26073#0" expanded="true" />
+                <element signature="e#26328#26344#0" expanded="true" />
+                <element signature="e#26488#26504#0" expanded="true" />
+                <element signature="e#28684#28700#0" expanded="true" />
+                <element signature="e#28955#28971#0" expanded="true" />
+                <element signature="e#29115#29131#0" expanded="true" />
+                <element signature="e#30698#30714#0" expanded="true" />
+                <element signature="e#30858#30874#0" expanded="true" />
+                <element signature="e#32333#32349#0" expanded="true" />
+                <element signature="e#32614#32630#0" expanded="true" />
+                <element signature="e#32774#32790#0" expanded="true" />
+                <element signature="e#34526#34542#0" expanded="true" />
+                <element signature="e#34798#34814#0" expanded="true" />
+                <element signature="e#34958#34974#0" expanded="true" />
+                <element signature="e#36563#36579#0" expanded="true" />
+                <element signature="e#36833#36849#0" expanded="true" />
+                <element signature="e#36993#37009#0" expanded="true" />
+                <element signature="e#38798#38814#0" expanded="true" />
+                <element signature="e#39088#39104#0" expanded="true" />
+                <element signature="e#39248#39264#0" expanded="true" />
+                <element signature="e#41277#41293#0" expanded="true" />
+                <element signature="e#41564#41580#0" expanded="true" />
+                <element signature="e#41724#41740#0" expanded="true" />
+                <element signature="e#43383#43399#0" expanded="true" />
+                <element signature="e#43651#43667#0" expanded="true" />
+                <element signature="e#43811#43827#0" expanded="true" />
+                <element signature="e#45259#45275#0" expanded="true" />
+                <element signature="e#45532#45548#0" expanded="true" />
+                <element signature="e#45692#45708#0" expanded="true" />
+                <element signature="e#47308#47324#0" expanded="true" />
+                <element signature="e#47580#47596#0" expanded="true" />
+                <element signature="e#47740#47756#0" expanded="true" />
+                <element signature="e#49555#49571#0" expanded="true" />
+                <element signature="e#49826#49842#0" expanded="true" />
+                <element signature="e#49986#50002#0" expanded="true" />
+                <element signature="e#51583#51599#0" expanded="true" />
+                <element signature="e#51854#51870#0" expanded="true" />
+                <element signature="e#52014#52030#0" expanded="true" />
+                <element signature="e#53677#53693#0" expanded="true" />
+                <element signature="e#53944#53960#0" expanded="true" />
+                <element signature="e#54104#54120#0" expanded="true" />
+                <element signature="e#55782#55798#0" expanded="true" />
+                <element signature="e#56059#56075#0" expanded="true" />
+                <element signature="e#56219#56235#0" expanded="true" />
+                <element signature="e#57663#57679#0" expanded="true" />
+                <element signature="e#57941#57957#0" expanded="true" />
+                <element signature="e#58101#58117#0" expanded="true" />
+                <element signature="e#59603#59619#0" expanded="true" />
+                <element signature="e#59881#59897#0" expanded="true" />
+                <element signature="e#60041#60057#0" expanded="true" />
+                <element signature="e#61724#61740#0" expanded="true" />
+                <element signature="e#62002#62018#0" expanded="true" />
+                <element signature="e#62162#62178#0" expanded="true" />
+                <element signature="e#64156#64172#0" expanded="true" />
+                <element signature="e#64428#64444#0" expanded="true" />
+                <element signature="e#64588#64604#0" expanded="true" />
+                <element signature="e#66835#66851#0" expanded="true" />
+                <element signature="e#67112#67128#0" expanded="true" />
+                <element signature="e#67272#67288#0" expanded="true" />
+                <element signature="e#68788#68804#0" expanded="true" />
+                <element signature="e#68948#68964#0" expanded="true" />
+                <element signature="e#70151#70167#0" expanded="true" />
+                <element signature="e#70311#70327#0" expanded="true" />
+                <element signature="e#71890#71906#0" expanded="true" />
+                <element signature="e#72157#72173#0" expanded="true" />
+                <element signature="e#72317#72333#0" expanded="true" />
+                <element signature="e#74081#74097#0" expanded="true" />
+                <element signature="e#74347#74363#0" expanded="true" />
+                <element signature="e#74507#74523#0" expanded="true" />
+                <element signature="e#76028#76044#0" expanded="true" />
+                <element signature="e#76301#76317#0" expanded="true" />
+                <element signature="e#76461#76477#0" expanded="true" />
+                <element signature="e#78030#78046#0" expanded="true" />
+                <element signature="e#78298#78314#0" expanded="true" />
+                <element signature="e#78458#78474#0" expanded="true" />
+                <element signature="e#80021#80037#0" expanded="true" />
+                <element signature="e#80293#80309#0" expanded="true" />
+                <element signature="e#80453#80469#0" expanded="true" />
+                <element signature="e#82173#82189#0" expanded="true" />
+                <element signature="e#82444#82460#0" expanded="true" />
+                <element signature="e#82604#82620#0" expanded="true" />
+                <element signature="e#84241#84257#0" expanded="true" />
+                <element signature="e#84513#84529#0" expanded="true" />
+                <element signature="e#84673#84689#0" expanded="true" />
+                <element signature="e#86165#86181#0" expanded="true" />
+                <element signature="e#86433#86449#0" expanded="true" />
+                <element signature="e#86593#86609#0" expanded="true" />
+                <element signature="e#88040#88056#0" expanded="true" />
+                <element signature="e#88310#88326#0" expanded="true" />
+                <element signature="e#88470#88486#0" expanded="true" />
+                <element signature="e#90632#90648#0" expanded="true" />
+                <element signature="e#90905#90921#0" expanded="true" />
+                <element signature="e#91065#91081#0" expanded="true" />
+                <element signature="e#92807#92823#0" expanded="true" />
+                <element signature="e#93073#93089#0" expanded="true" />
+                <element signature="e#93233#93249#0" expanded="true" />
+                <element signature="e#95066#95082#0" expanded="true" />
+                <element signature="e#95332#95348#0" expanded="true" />
+                <element signature="e#95492#95508#0" expanded="true" />
+                <element signature="e#97419#97435#0" expanded="true" />
+                <element signature="e#99137#99153#0" expanded="true" />
+                <element signature="e#99409#99425#0" expanded="true" />
+                <element signature="e#99569#99585#0" expanded="true" />
+                <element signature="e#101112#101128#0" expanded="true" />
+                <element signature="e#101383#101399#0" expanded="true" />
+                <element signature="e#101543#101559#0" expanded="true" />
+                <element signature="e#103012#103028#0" expanded="true" />
+                <element signature="e#103271#103287#0" expanded="true" />
+                <element signature="e#103431#103447#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/ApiClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="657" column="56" lean-forward="true" selection-start-line="657" selection-start-column="56" selection-end-line="657" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2452#2453#0" expanded="true" />
+                <element signature="e#2502#2503#0" expanded="true" />
+                <element signature="e#4207#4208#0" expanded="true" />
+                <element signature="e#4238#4239#0" expanded="true" />
+                <element signature="e#4649#4650#0" expanded="true" />
+                <element signature="e#4682#4683#0" expanded="true" />
+                <element signature="e#4875#4876#0" expanded="true" />
+                <element signature="e#4913#4914#0" expanded="true" />
+                <element signature="e#5135#5136#0" expanded="true" />
+                <element signature="e#5173#5174#0" expanded="true" />
+                <element signature="e#5406#5407#0" expanded="true" />
+                <element signature="e#5458#5459#0" expanded="true" />
+                <element signature="e#9854#9855#0" expanded="true" />
+                <element signature="e#9886#9887#0" expanded="true" />
+                <element signature="e#10041#10042#0" expanded="true" />
+                <element signature="e#10074#10075#0" expanded="true" />
+                <element signature="e#10713#10714#0" expanded="true" />
+                <element signature="e#10759#10760#0" expanded="true" />
+                <element signature="e#12059#12075#0" expanded="true" />
+                <element signature="e#12882#12890#0" expanded="true" />
+                <element signature="e#19228#19398#0" expanded="true" />
+                <element signature="e#19397#19398#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.9.RELEASE/f85656c1404f6e4fddbc1ca2180748856880913f/spring-core-4.3.9.RELEASE-sources.jar!/org/springframework/core/ParameterizedTypeReference.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/jackson/NumericBooleanDeserializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/jackson/NumericBooleanSerializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.8/f66792d499a6fea6c7a743558f940e0ebf775ce3/jackson-databind-2.9.8-sources.jar!/com/fasterxml/jackson/databind/ser/std/NonTypedScalarSerializerBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+              <folding>
+                <element signature="e#759#760#0" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>docServerTestLetterPaperCall</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="2.6" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="sevdesk-java-client" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="sevdesk-java-client" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'sevdesk-java-client'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'sevdesk-java-client'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Cleans all Eclipse files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipse" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'main'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'test'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse classpath file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'sevdesk-java-client'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes JVM resources 'main:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'sevdesk-java-client'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Java source 'main:java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'sevdesk-java-client'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Java source 'test:java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="execute" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'sevdesk-java-client'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates all Eclipse files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipse" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes JVM resources 'test:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse JDT settings file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse project file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'sevdesk-java-client'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$USER_HOME$/.gradle/gradle.properties" value="543257691" />
+        <entry key="$PROJECT_DIR$" value="9314174771000" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3063362319" />
+        <entry key="$PROJECT_DIR$/gradle.properties" value="0" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2710121171" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="2661957915" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="sevdesk-java-client" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/gradle-ui-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/gradle-native-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/gradle-wrapper-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/gradle-model-core-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/gradle-core-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/ant-1.9.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/gradle-base-services-groovy-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/gradle-cli-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/gradle-open-api-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/gradle-docs-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/gradle-messaging-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/ant-launcher-1.9.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/gradle-launcher-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/gradle-base-services-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/groovy-all-2.3.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/gradle-model-groovy-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/gradle-resources-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/gradle-tooling-api-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-javascript-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-plugins-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-build-comparison-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-platform-native-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-jacoco-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-language-native-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-plugin-use-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-language-scala-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-announce-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-tooling-api-builders-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-publish-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-sonar-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-ear-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-testing-native-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-dependency-management-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-platform-base-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-language-jvm-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-ide-native-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-plugin-development-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-diagnostics-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-language-java-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-language-groovy-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-osgi-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-antlr-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-reporting-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-jetty-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-ide-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-platform-play-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-scala-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-resources-http-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-platform-jvm-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-build-init-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-maven-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-signing-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-resources-sftp-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-code-quality-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-resources-s3-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-test-kit-2.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.6-bin/7og9jkn1p1nxjafu1htp0hhvc/gradle-2.6/lib/plugins/gradle-ivy-2.6.jar" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../Business/trash-tracker" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/DocServerApi.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/InvoiceApi.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/jackson/NumericBooleanDeserializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/jackson/NumericBooleanSerializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/TestApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/ApiClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelInvoice.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1680" />
+    <option name="y" value="23" />
+    <option name="width" value="2560" />
+    <option name="height" value="1417" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sevdesk-java-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sevdesk-java-client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sevdesk-java-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sevdesk-java-client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sevdesk-java-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sevdesk-java-client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sevdesk-java-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sevdesk-java-client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sevdesk-java-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sevdesk-java-client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sevdesk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sevdesk-java-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sevdesk-java-client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sevdesk" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sevdesk-java-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sevdesk-java-client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sevdesk" type="462c0819:PsiDirectoryNode" />
+              <item name="jackson" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sevdesk-java-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sevdesk-java-client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sevdesk" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.startup.StartupConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="TestApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="de.wichmann.sevdesk.TestApi" />
+      <module name="sevdesk-java-client_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.wichmann.sevdesk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Twisted Trial">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestApi" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5f10df15-0cd2-430d-8067-6a1a72e743f5" name="Default Changelist" comment="" />
+      <created>1556134804050</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556134804050</updated>
+      <workItem from="1556134810801" duration="3969000" />
+      <workItem from="1556228035155" duration="12732000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="16701000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1680" y="23" width="2560" height="1417" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25297856" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="JRebel" order="2" side_tool="true" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Designer" order="5" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Messages" weight="0.23245282" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="JRebel Executor" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32981133" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32981133" />
+      <window_info anchor="bottom" id="Hybris Console [Experimental]" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.46716982" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="SonarLint" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" side_tool="true" />
+      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="PlantUML" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" />
+      <window_info anchor="right" id="SciView" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/ApiClient.java</url>
+          <line>409</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/ApiClient.java</url>
+          <line>411</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/TestApi.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/TestApi.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>invoiceApi.addInvoice(params)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>invoice.getId()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>mapper.readValue(responseEntity.getBody().toString(), ModelInvoice.class)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>invoice</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>e.getResponseBodyAsString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>invoiceApi.saveInvoice(params)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ObjectMapper mapper</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>restTemplate.exchange(requestEntity, String.class)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/AccountingChartApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/InvoicePosApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelVoucher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelCheckAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/ApiException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="17" column="162" selection-start-line="17" selection-start-column="162" selection-end-line="17" selection-end-column="162" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/CustomInstantDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelTaxSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="25" column="162" selection-start-line="25" selection-start-column="162" selection-end-line="25" selection-end-column="162" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/RFC3339DateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.swagger-codegen-ignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/JSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="162" selection-start-line="10" selection-start-column="162" selection-end-line="10" selection-end-column="162" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelAggregator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.9.RELEASE/f85656c1404f6e4fddbc1ca2180748856880913f/spring-core-4.3.9.RELEASE-sources.jar!/org/springframework/util/MultiValueMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/DocServerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="369" column="59" selection-start-line="369" selection-start-column="59" selection-end-line="369" selection-end-column="59" />
+          <folding>
+            <element signature="e#1168#1169#0" expanded="true" />
+            <element signature="e#1205#1206#0" expanded="true" />
+            <element signature="e#1268#1269#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1381#1382#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+            <element signature="e#1476#1477#0" expanded="true" />
+            <element signature="e#2128#2144#0" expanded="true" />
+            <element signature="e#2288#2304#0" expanded="true" />
+            <element signature="e#3580#3596#0" expanded="true" />
+            <element signature="e#3740#3756#0" expanded="true" />
+            <element signature="e#5031#5047#0" expanded="true" />
+            <element signature="e#5191#5207#0" expanded="true" />
+            <element signature="e#6486#6502#0" expanded="true" />
+            <element signature="e#6646#6662#0" expanded="true" />
+            <element signature="e#7863#7879#0" expanded="true" />
+            <element signature="e#8023#8039#0" expanded="true" />
+            <element signature="e#9301#9317#0" expanded="true" />
+            <element signature="e#9461#9477#0" expanded="true" />
+            <element signature="e#10740#10756#0" expanded="true" />
+            <element signature="e#10900#10916#0" expanded="true" />
+            <element signature="e#12211#12227#0" expanded="true" />
+            <element signature="e#12371#12387#0" expanded="true" />
+            <element signature="e#13664#13680#0" expanded="true" />
+            <element signature="e#13824#13840#0" expanded="true" />
+            <element signature="e#15100#15116#0" expanded="true" />
+            <element signature="e#15260#15276#0" expanded="true" />
+            <element signature="e#16828#16844#0" expanded="true" />
+            <element signature="e#16988#17004#0" expanded="true" />
+            <element signature="e#20391#20407#0" expanded="true" />
+            <element signature="e#20551#20567#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="195">
+            <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+            <folding>
+              <element signature="imports" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.9/830eda77a8aaaf68a87c7dad29b3d6acd4f4f074/jackson-annotations-2.8.9-sources.jar!/com/fasterxml/jackson/annotation/JsonTypeInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.9.RELEASE/ac31864038a1c31d5a49c1bef84e5af4a162a655/spring-web-4.3.9.RELEASE-sources.jar!/org/springframework/http/RequestEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="373" column="27" selection-start-line="373" selection-start-column="27" selection-end-line="373" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.9.RELEASE/ac31864038a1c31d5a49c1bef84e5af4a162a655/spring-web-4.3.9.RELEASE-sources.jar!/org/springframework/http/ResponseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelDiscounts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-475">
+          <caret line="25" column="162" selection-start-line="25" selection-start-column="162" selection-end-line="25" selection-end-column="162" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.9.RELEASE/ac31864038a1c31d5a49c1bef84e5af4a162a655/spring-web-4.3.9.RELEASE-sources.jar!/org/springframework/web/client/RestTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="582" column="32" selection-start-line="582" selection-start-column="32" selection-end-line="582" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelInvoiceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.9.RELEASE/ac31864038a1c31d5a49c1bef84e5af4a162a655/spring-web-4.3.9.RELEASE-sources.jar!/org/springframework/web/client/DefaultResponseErrorHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.8/f66792d499a6fea6c7a743558f940e0ebf775ce3/jackson-databind-2.9.8-sources.jar!/com/fasterxml/jackson/databind/ser/std/NonTypedScalarSerializerBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/jackson/NumericBooleanDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelSevUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="24" column="162" selection-start-line="24" selection-start-column="162" selection-end-line="24" selection-end-column="162" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.9.RELEASE/f85656c1404f6e4fddbc1ca2180748856880913f/spring-core-4.3.9.RELEASE-sources.jar!/org/springframework/core/ParameterizedTypeReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/jackson/NumericBooleanSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/api/InvoiceApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+          <folding>
+            <element signature="e#1652#1653#0" expanded="true" />
+            <element signature="e#1689#1690#0" expanded="true" />
+            <element signature="e#1750#1751#0" expanded="true" />
+            <element signature="e#1792#1793#0" expanded="true" />
+            <element signature="e#1831#1832#0" expanded="true" />
+            <element signature="e#1863#1864#0" expanded="true" />
+            <element signature="e#1916#1917#0" expanded="true" />
+            <element signature="e#1958#1959#0" expanded="true" />
+            <element signature="e#2540#2556#0" expanded="true" />
+            <element signature="e#4293#4309#0" expanded="true" />
+            <element signature="e#4559#4575#0" expanded="true" />
+            <element signature="e#4719#4735#0" expanded="true" />
+            <element signature="e#6536#6552#0" expanded="true" />
+            <element signature="e#6696#6712#0" expanded="true" />
+            <element signature="e#8551#8567#0" expanded="true" />
+            <element signature="e#8711#8727#0" expanded="true" />
+            <element signature="e#10213#10229#0" expanded="true" />
+            <element signature="e#10472#10488#0" expanded="true" />
+            <element signature="e#10632#10648#0" expanded="true" />
+            <element signature="e#12068#12084#0" expanded="true" />
+            <element signature="e#12337#12353#0" expanded="true" />
+            <element signature="e#12497#12513#0" expanded="true" />
+            <element signature="e#14677#14693#0" expanded="true" />
+            <element signature="e#14837#14853#0" expanded="true" />
+            <element signature="e#16869#16885#0" expanded="true" />
+            <element signature="e#17135#17151#0" expanded="true" />
+            <element signature="e#17295#17311#0" expanded="true" />
+            <element signature="e#19458#19474#0" expanded="true" />
+            <element signature="e#19618#19634#0" expanded="true" />
+            <element signature="e#21577#21593#0" expanded="true" />
+            <element signature="e#21737#21753#0" expanded="true" />
+            <element signature="e#24088#24104#0" expanded="true" />
+            <element signature="e#24248#24264#0" expanded="true" />
+            <element signature="e#26057#26073#0" expanded="true" />
+            <element signature="e#26328#26344#0" expanded="true" />
+            <element signature="e#26488#26504#0" expanded="true" />
+            <element signature="e#28684#28700#0" expanded="true" />
+            <element signature="e#28955#28971#0" expanded="true" />
+            <element signature="e#29115#29131#0" expanded="true" />
+            <element signature="e#30698#30714#0" expanded="true" />
+            <element signature="e#30858#30874#0" expanded="true" />
+            <element signature="e#32333#32349#0" expanded="true" />
+            <element signature="e#32614#32630#0" expanded="true" />
+            <element signature="e#32774#32790#0" expanded="true" />
+            <element signature="e#34526#34542#0" expanded="true" />
+            <element signature="e#34798#34814#0" expanded="true" />
+            <element signature="e#34958#34974#0" expanded="true" />
+            <element signature="e#36563#36579#0" expanded="true" />
+            <element signature="e#36833#36849#0" expanded="true" />
+            <element signature="e#36993#37009#0" expanded="true" />
+            <element signature="e#38798#38814#0" expanded="true" />
+            <element signature="e#39088#39104#0" expanded="true" />
+            <element signature="e#39248#39264#0" expanded="true" />
+            <element signature="e#41277#41293#0" expanded="true" />
+            <element signature="e#41564#41580#0" expanded="true" />
+            <element signature="e#41724#41740#0" expanded="true" />
+            <element signature="e#43383#43399#0" expanded="true" />
+            <element signature="e#43651#43667#0" expanded="true" />
+            <element signature="e#43811#43827#0" expanded="true" />
+            <element signature="e#45259#45275#0" expanded="true" />
+            <element signature="e#45532#45548#0" expanded="true" />
+            <element signature="e#45692#45708#0" expanded="true" />
+            <element signature="e#47308#47324#0" expanded="true" />
+            <element signature="e#47580#47596#0" expanded="true" />
+            <element signature="e#47740#47756#0" expanded="true" />
+            <element signature="e#49555#49571#0" expanded="true" />
+            <element signature="e#49826#49842#0" expanded="true" />
+            <element signature="e#49986#50002#0" expanded="true" />
+            <element signature="e#51583#51599#0" expanded="true" />
+            <element signature="e#51854#51870#0" expanded="true" />
+            <element signature="e#52014#52030#0" expanded="true" />
+            <element signature="e#53677#53693#0" expanded="true" />
+            <element signature="e#53944#53960#0" expanded="true" />
+            <element signature="e#54104#54120#0" expanded="true" />
+            <element signature="e#55782#55798#0" expanded="true" />
+            <element signature="e#56059#56075#0" expanded="true" />
+            <element signature="e#56219#56235#0" expanded="true" />
+            <element signature="e#57663#57679#0" expanded="true" />
+            <element signature="e#57941#57957#0" expanded="true" />
+            <element signature="e#58101#58117#0" expanded="true" />
+            <element signature="e#59603#59619#0" expanded="true" />
+            <element signature="e#59881#59897#0" expanded="true" />
+            <element signature="e#60041#60057#0" expanded="true" />
+            <element signature="e#61724#61740#0" expanded="true" />
+            <element signature="e#62002#62018#0" expanded="true" />
+            <element signature="e#62162#62178#0" expanded="true" />
+            <element signature="e#64156#64172#0" expanded="true" />
+            <element signature="e#64428#64444#0" expanded="true" />
+            <element signature="e#64588#64604#0" expanded="true" />
+            <element signature="e#66835#66851#0" expanded="true" />
+            <element signature="e#67112#67128#0" expanded="true" />
+            <element signature="e#67272#67288#0" expanded="true" />
+            <element signature="e#68788#68804#0" expanded="true" />
+            <element signature="e#68948#68964#0" expanded="true" />
+            <element signature="e#70151#70167#0" expanded="true" />
+            <element signature="e#70311#70327#0" expanded="true" />
+            <element signature="e#71890#71906#0" expanded="true" />
+            <element signature="e#72157#72173#0" expanded="true" />
+            <element signature="e#72317#72333#0" expanded="true" />
+            <element signature="e#74081#74097#0" expanded="true" />
+            <element signature="e#74347#74363#0" expanded="true" />
+            <element signature="e#74507#74523#0" expanded="true" />
+            <element signature="e#76028#76044#0" expanded="true" />
+            <element signature="e#76301#76317#0" expanded="true" />
+            <element signature="e#76461#76477#0" expanded="true" />
+            <element signature="e#78030#78046#0" expanded="true" />
+            <element signature="e#78298#78314#0" expanded="true" />
+            <element signature="e#78458#78474#0" expanded="true" />
+            <element signature="e#80021#80037#0" expanded="true" />
+            <element signature="e#80293#80309#0" expanded="true" />
+            <element signature="e#80453#80469#0" expanded="true" />
+            <element signature="e#82173#82189#0" expanded="true" />
+            <element signature="e#82444#82460#0" expanded="true" />
+            <element signature="e#82604#82620#0" expanded="true" />
+            <element signature="e#84241#84257#0" expanded="true" />
+            <element signature="e#84513#84529#0" expanded="true" />
+            <element signature="e#84673#84689#0" expanded="true" />
+            <element signature="e#86165#86181#0" expanded="true" />
+            <element signature="e#86433#86449#0" expanded="true" />
+            <element signature="e#86593#86609#0" expanded="true" />
+            <element signature="e#88040#88056#0" expanded="true" />
+            <element signature="e#88310#88326#0" expanded="true" />
+            <element signature="e#88470#88486#0" expanded="true" />
+            <element signature="e#90632#90648#0" expanded="true" />
+            <element signature="e#90905#90921#0" expanded="true" />
+            <element signature="e#91065#91081#0" expanded="true" />
+            <element signature="e#92807#92823#0" expanded="true" />
+            <element signature="e#93073#93089#0" expanded="true" />
+            <element signature="e#93233#93249#0" expanded="true" />
+            <element signature="e#95066#95082#0" expanded="true" />
+            <element signature="e#95332#95348#0" expanded="true" />
+            <element signature="e#95492#95508#0" expanded="true" />
+            <element signature="e#97419#97435#0" expanded="true" />
+            <element signature="e#99137#99153#0" expanded="true" />
+            <element signature="e#99409#99425#0" expanded="true" />
+            <element signature="e#99569#99585#0" expanded="true" />
+            <element signature="e#101112#101128#0" expanded="true" />
+            <element signature="e#101383#101399#0" expanded="true" />
+            <element signature="e#101543#101559#0" expanded="true" />
+            <element signature="e#103012#103028#0" expanded="true" />
+            <element signature="e#103271#103287#0" expanded="true" />
+            <element signature="e#103431#103447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/ApiClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="657" column="56" lean-forward="true" selection-start-line="657" selection-start-column="56" selection-end-line="657" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2452#2453#0" expanded="true" />
+            <element signature="e#2502#2503#0" expanded="true" />
+            <element signature="e#4207#4208#0" expanded="true" />
+            <element signature="e#4238#4239#0" expanded="true" />
+            <element signature="e#4649#4650#0" expanded="true" />
+            <element signature="e#4682#4683#0" expanded="true" />
+            <element signature="e#4875#4876#0" expanded="true" />
+            <element signature="e#4913#4914#0" expanded="true" />
+            <element signature="e#5135#5136#0" expanded="true" />
+            <element signature="e#5173#5174#0" expanded="true" />
+            <element signature="e#5406#5407#0" expanded="true" />
+            <element signature="e#5458#5459#0" expanded="true" />
+            <element signature="e#9854#9855#0" expanded="true" />
+            <element signature="e#9886#9887#0" expanded="true" />
+            <element signature="e#10041#10042#0" expanded="true" />
+            <element signature="e#10074#10075#0" expanded="true" />
+            <element signature="e#10713#10714#0" expanded="true" />
+            <element signature="e#10759#10760#0" expanded="true" />
+            <element signature="e#12059#12075#0" expanded="true" />
+            <element signature="e#12882#12890#0" expanded="true" />
+            <element signature="e#19228#19398#0" expanded="true" />
+            <element signature="e#19397#19398#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/TestApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#1408#1409#0" expanded="true" />
+            <element signature="e#1426#1427#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/wichmann/sevdesk/model/ModelInvoice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6558#6559#0" expanded="true" />
+            <element signature="e#6585#6586#0" expanded="true" />
+            <element signature="e#4268#4269#0" expanded="true" />
+            <element signature="e#4284#4285#0" expanded="true" />
+            <element signature="e#4316#4317#0" expanded="true" />
+            <element signature="e#4335#4336#0" expanded="true" />
+            <element signature="e#32157#32158#0" expanded="true" />
+            <element signature="e#32218#32219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>groovy-2.5.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>sevdesk-java-client</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: com.fasterxml.jackson.core:jackson-annotations:2.8.9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

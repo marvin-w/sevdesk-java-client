@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelAccountingSystemNumber;
 import de.wichmann.sevdesk.model.ModelAccountingType;
 import org.junit.Test;
@@ -40,7 +39,7 @@ public class AccountingSystemNumberApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addAccountingSystemNumberTest() throws ApiException {
+    public void addAccountingSystemNumberTest() {
         ModelAccountingSystemNumber response = api.addAccountingSystemNumber();
 
         // TODO: test validations
@@ -54,7 +53,7 @@ public class AccountingSystemNumberApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteAccountingSystemNumberTest() throws ApiException {
+    public void deleteAccountingSystemNumberTest() {
         Integer id = null;
         api.deleteAccountingSystemNumber(id);
 
@@ -69,7 +68,7 @@ public class AccountingSystemNumberApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getAccountingSystemNumbersTest() throws ApiException {
+    public void getAccountingSystemNumbersTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -86,7 +85,7 @@ public class AccountingSystemNumberApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateAccountingSystemNumberTest() throws ApiException {
+    public void updateAccountingSystemNumberTest() {
         Integer id = null;
         ModelAccountingType response = api.updateAccountingSystemNumber(id);
 

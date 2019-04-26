@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelFeed;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class FeedApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addFeedTest() throws ApiException {
+    public void addFeedTest() {
         ModelFeed response = api.addFeed();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class FeedApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteFeedTest() throws ApiException {
+    public void deleteFeedTest() {
         Integer id = null;
         api.deleteFeed(id);
 
@@ -68,7 +67,7 @@ public class FeedApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getFeedsTest() throws ApiException {
+    public void getFeedsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class FeedApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getParsedObjectActionTest() throws ApiException {
+    public void getParsedObjectActionTest() {
         Integer id = null;
         api.getParsedObjectAction(id);
 
@@ -100,7 +99,7 @@ public class FeedApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateFeedTest() throws ApiException {
+    public void updateFeedTest() {
         Integer id = null;
         ModelFeed response = api.updateFeed(id);
 

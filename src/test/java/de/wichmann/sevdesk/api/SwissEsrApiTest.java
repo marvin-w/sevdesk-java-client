@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelSwissEsr;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class SwissEsrApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getSwissEsrTest() throws ApiException {
+    public void getSwissEsrTest() {
         ModelSwissEsr response = api.getSwissEsr();
 
         // TODO: test validations

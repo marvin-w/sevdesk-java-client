@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import java.io.File;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class ExportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void exportContactCsvTest() throws ApiException {
+    public void exportContactCsvTest() {
         Integer contactId = null;
         String contactObjectName = null;
         Boolean download = null;
@@ -56,7 +55,7 @@ public class ExportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void exportContactListCsvTest() throws ApiException {
+    public void exportContactListCsvTest() {
         String sevQueryModelName = null;
         String sevQueryObjectName = null;
         Boolean download = null;
@@ -75,7 +74,7 @@ public class ExportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void exportDatevTest() throws ApiException {
+    public void exportDatevTest() {
         String scope = null;
         String start = null;
         String end = null;
@@ -95,7 +94,7 @@ public class ExportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void exportDatevZipTest() throws ApiException {
+    public void exportDatevZipTest() {
         String scope = null;
         String start = null;
         String end = null;
@@ -114,7 +113,7 @@ public class ExportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void exportInventoryPartLogListTest() throws ApiException {
+    public void exportInventoryPartLogListTest() {
         String sevQueryModelName = null;
         String sevQueryObjectName = null;
         Boolean download = null;
@@ -134,7 +133,7 @@ public class ExportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void exportInvoiceCsvTest() throws ApiException {
+    public void exportInvoiceCsvTest() {
         String sevQueryModelName = null;
         String sevQueryObjectName = null;
         Boolean download = null;
@@ -152,7 +151,7 @@ public class ExportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void exportInvoiceZipTest() throws ApiException {
+    public void exportInvoiceZipTest() {
         String sevQueryModelName = null;
         String sevQueryObjectName = null;
         Boolean download = null;
@@ -170,7 +169,7 @@ public class ExportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void exportPartCsvTest() throws ApiException {
+    public void exportPartCsvTest() {
         String sevQueryModelName = null;
         String sevQueryObjectName = null;
         Boolean download = null;
@@ -188,7 +187,7 @@ public class ExportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void exportPebeTest() throws ApiException {
+    public void exportPebeTest() {
         String scope = null;
         String start = null;
         String end = null;
@@ -208,7 +207,7 @@ public class ExportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void exportTransactionsCsvTest() throws ApiException {
+    public void exportTransactionsCsvTest() {
         Boolean sevQueryFilterRegister = null;
         String sevQueryModelName = null;
         String sevQueryObjectName = null;
@@ -230,7 +229,7 @@ public class ExportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void exportVoucherListCsvTest() throws ApiException {
+    public void exportVoucherListCsvTest() {
         String sevQueryModelName = null;
         String sevQueryObjectName = null;
         Boolean download = null;
@@ -250,7 +249,7 @@ public class ExportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void exportVoucherZipTest() throws ApiException {
+    public void exportVoucherZipTest() {
         String sevQueryModelName = null;
         String sevQueryObjectName = null;
         Boolean download = null;

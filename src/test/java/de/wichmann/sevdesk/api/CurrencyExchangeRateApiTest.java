@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelCurrencyExchangeRate;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class CurrencyExchangeRateApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getCurrencyExchangeRatesTest() throws ApiException {
+    public void getCurrencyExchangeRatesTest() {
         Integer limit = null;
         Integer offset = null;
         ModelCurrencyExchangeRate response = api.getCurrencyExchangeRates(limit, offset);

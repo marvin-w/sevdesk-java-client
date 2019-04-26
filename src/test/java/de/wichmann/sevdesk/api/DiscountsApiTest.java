@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelDiscounts;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class DiscountsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addDiscountTest() throws ApiException {
+    public void addDiscountTest() {
         ModelDiscounts response = api.addDiscount();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class DiscountsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteDiscountTest() throws ApiException {
+    public void deleteDiscountTest() {
         Integer id = null;
         api.deleteDiscount(id);
 
@@ -68,7 +67,7 @@ public class DiscountsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getDiscountsTest() throws ApiException {
+    public void getDiscountsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class DiscountsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateDiscountTest() throws ApiException {
+    public void updateDiscountTest() {
         Integer id = null;
         ModelDiscounts response = api.updateDiscount(id);
 

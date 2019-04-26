@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import org.junit.Test;
 import org.junit.Ignore;
 
@@ -38,7 +37,7 @@ public class AggregatorApiTest {
      *          if the Api call fails
      */
     @Test
-    public void aggregatorCalcTotalDepreciationTest() throws ApiException {
+    public void aggregatorCalcTotalDepreciationTest() {
         api.aggregatorCalcTotalDepreciation();
 
         // TODO: test validations
@@ -52,7 +51,7 @@ public class AggregatorApiTest {
      *          if the Api call fails
      */
     @Test
-    public void aggregatorGetAccountingScoreTest() throws ApiException {
+    public void aggregatorGetAccountingScoreTest() {
         String startdate = null;
         String enddate = null;
         api.aggregatorGetAccountingScore(startdate, enddate);
@@ -68,7 +67,7 @@ public class AggregatorApiTest {
      *          if the Api call fails
      */
     @Test
-    public void aggregatorGetAppRevenueChartDataTest() throws ApiException {
+    public void aggregatorGetAppRevenueChartDataTest() {
         api.aggregatorGetAppRevenueChartData();
 
         // TODO: test validations
@@ -82,7 +81,7 @@ public class AggregatorApiTest {
      *          if the Api call fails
      */
     @Test
-    public void aggregatorGetProfitAndLossCalculationTest() throws ApiException {
+    public void aggregatorGetProfitAndLossCalculationTest() {
         String startDate = null;
         String endDate = null;
         Boolean actualTaxation = null;
@@ -99,7 +98,7 @@ public class AggregatorApiTest {
      *          if the Api call fails
      */
     @Test
-    public void aggregatorGetTaxInformationTest() throws ApiException {
+    public void aggregatorGetTaxInformationTest() {
         String type = null;
         String year = null;
         Integer period = null;
@@ -118,7 +117,7 @@ public class AggregatorApiTest {
      *          if the Api call fails
      */
     @Test
-    public void aggregatorGetVoucherCategoryInformationTest() throws ApiException {
+    public void aggregatorGetVoucherCategoryInformationTest() {
         api.aggregatorGetVoucherCategoryInformation();
 
         // TODO: test validations
@@ -132,7 +131,7 @@ public class AggregatorApiTest {
      *          if the Api call fails
      */
     @Test
-    public void aggregatorGetVoucherChartDataTest() throws ApiException {
+    public void aggregatorGetVoucherChartDataTest() {
         String year = null;
         api.aggregatorGetVoucherChartData(year);
 
@@ -147,7 +146,7 @@ public class AggregatorApiTest {
      *          if the Api call fails
      */
     @Test
-    public void aggregatorGetWebRevenueChartDataTest() throws ApiException {
+    public void aggregatorGetWebRevenueChartDataTest() {
         Boolean sumGrossToggle = null;
         api.aggregatorGetWebRevenueChartData(sumGrossToggle);
 

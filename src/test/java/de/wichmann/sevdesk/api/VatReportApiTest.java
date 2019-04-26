@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import org.junit.Test;
 import org.junit.Ignore;
 
@@ -38,7 +37,7 @@ public class VatReportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getVatReportTest() throws ApiException {
+    public void getVatReportTest() {
         Integer reportingYear = null;
         String reportingPeriodCode = null;
         Boolean noActualTaxationOnInputTax = null;

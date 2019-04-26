@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelDocumentIndex;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class DocumentIndexApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getDocumentIndexesTest() throws ApiException {
+    public void getDocumentIndexesTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;

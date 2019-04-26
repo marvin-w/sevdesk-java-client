@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import java.io.File;
 import de.wichmann.sevdesk.model.ModelDocument;
 import org.junit.Test;
@@ -40,7 +39,7 @@ public class DocumentApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addDocumentTest() throws ApiException {
+    public void addDocumentTest() {
         ModelDocument response = api.addDocument();
 
         // TODO: test validations
@@ -54,7 +53,7 @@ public class DocumentApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteDocumentTest() throws ApiException {
+    public void deleteDocumentTest() {
         Integer id = null;
         api.deleteDocument(id);
 
@@ -69,7 +68,7 @@ public class DocumentApiTest {
      *          if the Api call fails
      */
     @Test
-    public void downloadDocumentTest() throws ApiException {
+    public void downloadDocumentTest() {
         Integer id = null;
         File response = api.downloadDocument(id);
 
@@ -84,7 +83,7 @@ public class DocumentApiTest {
      *          if the Api call fails
      */
     @Test
-    public void factoryAddDocumentTest() throws ApiException {
+    public void factoryAddDocumentTest() {
         File file = null;
         String object = null;
         String folder = null;
@@ -101,7 +100,7 @@ public class DocumentApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getDocumentsTest() throws ApiException {
+    public void getDocumentsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -118,7 +117,7 @@ public class DocumentApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateDocumentTest() throws ApiException {
+    public void updateDocumentTest() {
         Integer id = null;
         ModelDocument response = api.updateDocument(id);
 
@@ -133,7 +132,7 @@ public class DocumentApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateDocumentStatusToTrashedTest() throws ApiException {
+    public void updateDocumentStatusToTrashedTest() {
         Integer id = null;
         Object response = api.updateDocumentStatusToTrashed(id);
 

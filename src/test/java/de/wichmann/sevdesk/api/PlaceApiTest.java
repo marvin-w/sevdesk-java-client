@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelPlace;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class PlaceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getPlacesTest() throws ApiException {
+    public void getPlacesTest() {
         Integer limit = null;
         Integer offset = null;
         ModelPlace response = api.getPlaces(limit, offset);

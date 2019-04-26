@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelCheckAccountTransaction;
 import de.wichmann.sevdesk.model.ModelCheckAccountTransactionLog;
 import de.wichmann.sevdesk.model.ModelDiscounts;
@@ -48,7 +47,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addInvoiceTest() throws ApiException {
+    public void addInvoiceTest() {
         ModelInvoice response = api.addInvoice();
 
         // TODO: test validations
@@ -62,7 +61,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void cancelInvoiceTest() throws ApiException {
+    public void cancelInvoiceTest() {
         Integer id = null;
         ModelInvoice response = api.cancelInvoice(id);
 
@@ -77,7 +76,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void createInvoiceFromOrderTest() throws ApiException {
+    public void createInvoiceFromOrderTest() {
         ModelInvoice response = api.createInvoiceFromOrder();
 
         // TODO: test validations
@@ -91,7 +90,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void createInvoiceReminderTest() throws ApiException {
+    public void createInvoiceReminderTest() {
         ModelInvoice response = api.createInvoiceReminder();
 
         // TODO: test validations
@@ -105,7 +104,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteInvoiceTest() throws ApiException {
+    public void deleteInvoiceTest() {
         Integer id = null;
         api.deleteInvoice(id);
 
@@ -120,7 +119,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void duplicateInvoiceTest() throws ApiException {
+    public void duplicateInvoiceTest() {
         Integer id = null;
         ModelInvoice response = api.duplicateInvoice(id);
 
@@ -135,7 +134,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getInvoiceAndReminderAmountTest() throws ApiException {
+    public void getInvoiceAndReminderAmountTest() {
         Integer invoiceId = null;
         String invoiceObjectName = null;
         Object response = api.getInvoiceAndReminderAmount(invoiceId, invoiceObjectName);
@@ -151,7 +150,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getInvoiceAsPdfTest() throws ApiException {
+    public void getInvoiceAsPdfTest() {
         Integer id = null;
         Boolean download = null;
         api.getInvoiceAsPdf(id, download);
@@ -167,7 +166,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getInvoiceReminderAmountTest() throws ApiException {
+    public void getInvoiceReminderAmountTest() {
         Integer invoiceId = null;
         String invoiceObjectName = null;
         Object response = api.getInvoiceReminderAmount(invoiceId, invoiceObjectName);
@@ -183,7 +182,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getInvoicesTest() throws ApiException {
+    public void getInvoicesTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -200,7 +199,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getNextInvoiceNumberTest() throws ApiException {
+    public void getNextInvoiceNumberTest() {
         String invoiceType = null;
         Boolean useNextNumber = null;
         api.getNextInvoiceNumber(invoiceType, useNextNumber);
@@ -216,7 +215,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceAddPositionTest() throws ApiException {
+    public void invoiceAddPositionTest() {
         Integer id = null;
         ModelInvoice response = api.invoiceAddPosition(id);
 
@@ -231,7 +230,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceBookAmountTest() throws ApiException {
+    public void invoiceBookAmountTest() {
         Integer id = null;
         Integer ammount = null;
         String date = null;
@@ -248,7 +247,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceCalcTotalDebitTest() throws ApiException {
+    public void invoiceCalcTotalDebitTest() {
         api.invoiceCalcTotalDebit();
 
         // TODO: test validations
@@ -262,7 +261,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceCalculateDunningLevelTest() throws ApiException {
+    public void invoiceCalculateDunningLevelTest() {
         Integer id = null;
         api.invoiceCalculateDunningLevel(id);
 
@@ -277,7 +276,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceChangeStatusTest() throws ApiException {
+    public void invoiceChangeStatusTest() {
         Integer id = null;
         Integer value = null;
         ModelInvoice response = api.invoiceChangeStatus(id, value);
@@ -293,7 +292,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetCancledTest() throws ApiException {
+    public void invoiceGetCancledTest() {
         Integer id = null;
         api.invoiceGetCancled(id);
 
@@ -308,7 +307,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetCheckAccountTransactionLogsTest() throws ApiException {
+    public void invoiceGetCheckAccountTransactionLogsTest() {
         Integer id = null;
         List<String> embed = null;
         ModelCheckAccountTransactionLog response = api.invoiceGetCheckAccountTransactionLogs(id, embed);
@@ -324,7 +323,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetCheckAccountTransactionsTest() throws ApiException {
+    public void invoiceGetCheckAccountTransactionsTest() {
         Integer id = null;
         List<String> embed = null;
         ModelCheckAccountTransaction response = api.invoiceGetCheckAccountTransactions(id, embed);
@@ -340,7 +339,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetDebitTest() throws ApiException {
+    public void invoiceGetDebitTest() {
         Integer id = null;
         api.invoiceGetDebit(id);
 
@@ -355,7 +354,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetDelinquentTest() throws ApiException {
+    public void invoiceGetDelinquentTest() {
         Integer id = null;
         api.invoiceGetDelinquent(id);
 
@@ -370,7 +369,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetDiscountsTest() throws ApiException {
+    public void invoiceGetDiscountsTest() {
         Integer id = null;
         List<String> embed = null;
         ModelDiscounts response = api.invoiceGetDiscounts(id, embed);
@@ -386,7 +385,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetDocumentTest() throws ApiException {
+    public void invoiceGetDocumentTest() {
         Integer id = null;
         List<String> embed = null;
         api.invoiceGetDocument(id, embed);
@@ -402,7 +401,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetDunningsTest() throws ApiException {
+    public void invoiceGetDunningsTest() {
         Integer id = null;
         ModelInvoice response = api.invoiceGetDunnings(id);
 
@@ -417,7 +416,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetFeedTest() throws ApiException {
+    public void invoiceGetFeedTest() {
         Integer id = null;
         List<String> embed = null;
         ModelFeed response = api.invoiceGetFeed(id, embed);
@@ -433,7 +432,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetFinalInvoiceIdTest() throws ApiException {
+    public void invoiceGetFinalInvoiceIdTest() {
         Integer id = null;
         api.invoiceGetFinalInvoiceId(id);
 
@@ -448,7 +447,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetIsPartiallyPaidTest() throws ApiException {
+    public void invoiceGetIsPartiallyPaidTest() {
         Integer id = null;
         api.invoiceGetIsPartiallyPaid(id);
 
@@ -463,7 +462,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetLastDunningDateTest() throws ApiException {
+    public void invoiceGetLastDunningDateTest() {
         Integer id = null;
         api.invoiceGetLastDunningDate(id);
 
@@ -478,7 +477,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetPartialInvoicesTest() throws ApiException {
+    public void invoiceGetPartialInvoicesTest() {
         Integer id = null;
         List<String> embed = null;
         ModelInvoice response = api.invoiceGetPartialInvoices(id, embed);
@@ -494,7 +493,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetPositionsTest() throws ApiException {
+    public void invoiceGetPositionsTest() {
         Integer id = null;
         Integer limit = null;
         Integer offset = null;
@@ -512,7 +511,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetRelatedObjectsTest() throws ApiException {
+    public void invoiceGetRelatedObjectsTest() {
         Integer id = null;
         Boolean includeItself = null;
         Boolean sortByType = null;
@@ -530,7 +529,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetSwissEsrTest() throws ApiException {
+    public void invoiceGetSwissEsrTest() {
         api.invoiceGetSwissEsr();
 
         // TODO: test validations
@@ -544,7 +543,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetSwissEsrDataTest() throws ApiException {
+    public void invoiceGetSwissEsrDataTest() {
         api.invoiceGetSwissEsrData();
 
         // TODO: test validations
@@ -558,7 +557,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetTagsTest() throws ApiException {
+    public void invoiceGetTagsTest() {
         Integer id = null;
         List<String> embed = null;
         ModelTag response = api.invoiceGetTags(id, embed);
@@ -574,7 +573,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetTaxTest() throws ApiException {
+    public void invoiceGetTaxTest() {
         Integer id = null;
         Boolean invoiceAmount = null;
         api.invoiceGetTax(id, invoiceAmount);
@@ -590,7 +589,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetTaxGroupsTest() throws ApiException {
+    public void invoiceGetTaxGroupsTest() {
         Integer id = null;
         api.invoiceGetTaxGroups(id);
 
@@ -605,7 +604,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetTotalTest() throws ApiException {
+    public void invoiceGetTotalTest() {
         Integer id = null;
         Boolean invoiceAmount = null;
         api.invoiceGetTotal(id, invoiceAmount);
@@ -621,7 +620,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetTotalCalcTest() throws ApiException {
+    public void invoiceGetTotalCalcTest() {
         Integer id = null;
         api.invoiceGetTotalCalc(id);
 
@@ -636,7 +635,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceGetTotalNetTest() throws ApiException {
+    public void invoiceGetTotalNetTest() {
         Integer id = null;
         Boolean invoiceAmount = null;
         Boolean withoutDiscounts = null;
@@ -653,7 +652,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceHasDiscountsTest() throws ApiException {
+    public void invoiceHasDiscountsTest() {
         Integer id = null;
         api.invoiceHasDiscounts(id);
 
@@ -668,7 +667,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceIsOriginTest() throws ApiException {
+    public void invoiceIsOriginTest() {
         Integer id = null;
         api.invoiceIsOrigin(id);
 
@@ -683,7 +682,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceMarkAsSentTest() throws ApiException {
+    public void invoiceMarkAsSentTest() {
         Integer id = null;
         ModelInvoice response = api.invoiceMarkAsSent(id);
 
@@ -698,7 +697,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceRefundAmountTest() throws ApiException {
+    public void invoiceRefundAmountTest() {
         Integer id = null;
         Integer ammount = null;
         String date = null;
@@ -715,7 +714,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceRenderTest() throws ApiException {
+    public void invoiceRenderTest() {
         Integer id = null;
         api.invoiceRender(id);
 
@@ -730,7 +729,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void invoiceSendByTest() throws ApiException {
+    public void invoiceSendByTest() {
         Integer id = null;
         String sendType = null;
         ModelInvoice response = api.invoiceSendBy(id, sendType);
@@ -746,7 +745,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void saveInvoiceTest() throws ApiException {
+    public void saveInvoiceTest() {
         ModelInvoiceFactory response = api.saveInvoice();
 
         // TODO: test validations
@@ -760,7 +759,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void sendInvoiceViaEmailTest() throws ApiException {
+    public void sendInvoiceViaEmailTest() {
         Integer id = null;
         ModelEmail response = api.sendInvoiceViaEmail(id);
 
@@ -775,7 +774,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void sendInvoiceViaPostTest() throws ApiException {
+    public void sendInvoiceViaPostTest() {
         Integer id = null;
         ModelInvoice response = api.sendInvoiceViaPost(id);
 
@@ -790,7 +789,7 @@ public class InvoiceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateInvoiceTest() throws ApiException {
+    public void updateInvoiceTest() {
         Integer id = null;
         ModelInvoice response = api.updateInvoice(id);
 

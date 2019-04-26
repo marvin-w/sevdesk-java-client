@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelContactAddress;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class ContactAddressApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addContactAddressTest() throws ApiException {
+    public void addContactAddressTest() {
         ModelContactAddress response = api.addContactAddress();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class ContactAddressApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteContactAddressTest() throws ApiException {
+    public void deleteContactAddressTest() {
         Integer id = null;
         api.deleteContactAddress(id);
 
@@ -68,7 +67,7 @@ public class ContactAddressApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getContactAddressesTest() throws ApiException {
+    public void getContactAddressesTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class ContactAddressApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateContactAddressTest() throws ApiException {
+    public void updateContactAddressTest() {
         Integer id = null;
         ModelContactAddress response = api.updateContactAddress(id);
 

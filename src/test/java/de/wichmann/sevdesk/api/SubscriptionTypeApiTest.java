@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelSubscriptionType;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class SubscriptionTypeApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getSubscriptionTypesTest() throws ApiException {
+    public void getSubscriptionTypesTest() {
         ModelSubscriptionType response = api.getSubscriptionTypes();
 
         // TODO: test validations

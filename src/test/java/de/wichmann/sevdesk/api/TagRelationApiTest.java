@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelTagRelation;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class TagRelationApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addTagRelationTest() throws ApiException {
+    public void addTagRelationTest() {
         ModelTagRelation response = api.addTagRelation();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class TagRelationApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteTagRelationTest() throws ApiException {
+    public void deleteTagRelationTest() {
         Integer id = null;
         api.deleteTagRelation(id);
 
@@ -68,7 +67,7 @@ public class TagRelationApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getTagRelationsTest() throws ApiException {
+    public void getTagRelationsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class TagRelationApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateTagRelationTest() throws ApiException {
+    public void updateTagRelationTest() {
         Integer id = null;
         ModelTagRelation response = api.updateTagRelation(id);
 

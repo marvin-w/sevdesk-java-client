@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelLetter;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class LetterApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addLetterTest() throws ApiException {
+    public void addLetterTest() {
         ModelLetter response = api.addLetter();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class LetterApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteLetterTest() throws ApiException {
+    public void deleteLetterTest() {
         Integer id = null;
         api.deleteLetter(id);
 
@@ -68,7 +67,7 @@ public class LetterApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getLettersTest() throws ApiException {
+    public void getLettersTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class LetterApiTest {
      *          if the Api call fails
      */
     @Test
-    public void letterGetPdfTest() throws ApiException {
+    public void letterGetPdfTest() {
         Integer id = null;
         api.letterGetPdf(id);
 
@@ -100,7 +99,7 @@ public class LetterApiTest {
      *          if the Api call fails
      */
     @Test
-    public void letterRenderTest() throws ApiException {
+    public void letterRenderTest() {
         Integer id = null;
         api.letterRender(id);
 
@@ -115,7 +114,7 @@ public class LetterApiTest {
      *          if the Api call fails
      */
     @Test
-    public void letterSendByTest() throws ApiException {
+    public void letterSendByTest() {
         Integer id = null;
         ModelLetter response = api.letterSendBy(id);
 
@@ -130,7 +129,7 @@ public class LetterApiTest {
      *          if the Api call fails
      */
     @Test
-    public void letterSendViaMailTest() throws ApiException {
+    public void letterSendViaMailTest() {
         Integer id = null;
         api.letterSendViaMail(id);
 
@@ -145,7 +144,7 @@ public class LetterApiTest {
      *          if the Api call fails
      */
     @Test
-    public void letterSendViaPostTest() throws ApiException {
+    public void letterSendViaPostTest() {
         Integer id = null;
         api.letterSendViaPost(id);
 
@@ -160,7 +159,7 @@ public class LetterApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateLetterTest() throws ApiException {
+    public void updateLetterTest() {
         Integer id = null;
         ModelLetter response = api.updateLetter(id);
 

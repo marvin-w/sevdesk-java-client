@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelInventoryPartLog;
 import de.wichmann.sevdesk.model.ModelPart;
 import org.junit.Test;
@@ -40,7 +39,7 @@ public class PartApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addPartTest() throws ApiException {
+    public void addPartTest() {
         ModelPart response = api.addPart();
 
         // TODO: test validations
@@ -54,7 +53,7 @@ public class PartApiTest {
      *          if the Api call fails
      */
     @Test
-    public void bookPartTest() throws ApiException {
+    public void bookPartTest() {
         Integer id = null;
         ModelPart response = api.bookPart(id);
 
@@ -69,7 +68,7 @@ public class PartApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deletePartTest() throws ApiException {
+    public void deletePartTest() {
         Integer id = null;
         api.deletePart(id);
 
@@ -84,7 +83,7 @@ public class PartApiTest {
      *          if the Api call fails
      */
     @Test
-    public void duplicatePartTest() throws ApiException {
+    public void duplicatePartTest() {
         Integer id = null;
         ModelPart response = api.duplicatePart(id);
 
@@ -99,7 +98,7 @@ public class PartApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getPartsTest() throws ApiException {
+    public void getPartsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -116,7 +115,7 @@ public class PartApiTest {
      *          if the Api call fails
      */
     @Test
-    public void partGetLastLogTest() throws ApiException {
+    public void partGetLastLogTest() {
         Integer id = null;
         String maxDate = null;
         List<String> embed = null;
@@ -133,7 +132,7 @@ public class PartApiTest {
      *          if the Api call fails
      */
     @Test
-    public void partGetPriceTest() throws ApiException {
+    public void partGetPriceTest() {
         Integer id = null;
         Integer contactId = null;
         String contactObjectName = null;
@@ -152,7 +151,7 @@ public class PartApiTest {
      *          if the Api call fails
      */
     @Test
-    public void partGetStockTest() throws ApiException {
+    public void partGetStockTest() {
         Integer id = null;
         String maxDate = null;
         api.partGetStock(id, maxDate);
@@ -168,7 +167,7 @@ public class PartApiTest {
      *          if the Api call fails
      */
     @Test
-    public void partGetStockBeforeTest() throws ApiException {
+    public void partGetStockBeforeTest() {
         Integer id = null;
         String date = null;
         api.partGetStockBefore(id, date);
@@ -184,7 +183,7 @@ public class PartApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updatePartTest() throws ApiException {
+    public void updatePartTest() {
         Integer id = null;
         ModelPart response = api.updatePart(id);
 

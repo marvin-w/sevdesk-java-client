@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelCheckAccountTransaction;
 import de.wichmann.sevdesk.model.ModelCheckAccountTransactionLog;
 import org.junit.Test;
@@ -40,7 +39,7 @@ public class CheckAccountTransactionApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addCheckAccountTransactionTest() throws ApiException {
+    public void addCheckAccountTransactionTest() {
         ModelCheckAccountTransaction response = api.addCheckAccountTransaction();
 
         // TODO: test validations
@@ -54,7 +53,7 @@ public class CheckAccountTransactionApiTest {
      *          if the Api call fails
      */
     @Test
-    public void checkAccountTransactionGetLogTest() throws ApiException {
+    public void checkAccountTransactionGetLogTest() {
         Integer id = null;
         List<String> embed = null;
         ModelCheckAccountTransactionLog response = api.checkAccountTransactionGetLog(id, embed);
@@ -70,7 +69,7 @@ public class CheckAccountTransactionApiTest {
      *          if the Api call fails
      */
     @Test
-    public void checkAccountTransactionGetRemainingAmountTest() throws ApiException {
+    public void checkAccountTransactionGetRemainingAmountTest() {
         Integer id = null;
         api.checkAccountTransactionGetRemainingAmount(id);
 
@@ -85,7 +84,7 @@ public class CheckAccountTransactionApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteCheckAccountTransactionTest() throws ApiException {
+    public void deleteCheckAccountTransactionTest() {
         Integer id = null;
         api.deleteCheckAccountTransaction(id);
 
@@ -100,7 +99,7 @@ public class CheckAccountTransactionApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getCheckAccountTransactionsTest() throws ApiException {
+    public void getCheckAccountTransactionsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -117,7 +116,7 @@ public class CheckAccountTransactionApiTest {
      *          if the Api call fails
      */
     @Test
-    public void linkInvoiceToCheckAccountTransactionTest() throws ApiException {
+    public void linkInvoiceToCheckAccountTransactionTest() {
         Integer id = null;
         ModelCheckAccountTransaction response = api.linkInvoiceToCheckAccountTransaction(id);
 
@@ -132,7 +131,7 @@ public class CheckAccountTransactionApiTest {
      *          if the Api call fails
      */
     @Test
-    public void linkVoucherToCheckAccountTransactionTest() throws ApiException {
+    public void linkVoucherToCheckAccountTransactionTest() {
         Integer id = null;
         ModelCheckAccountTransaction response = api.linkVoucherToCheckAccountTransaction(id);
 
@@ -147,7 +146,7 @@ public class CheckAccountTransactionApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateCheckAccountTransactionTest() throws ApiException {
+    public void updateCheckAccountTransactionTest() {
         Integer id = null;
         ModelCheckAccountTransaction response = api.updateCheckAccountTransaction(id);
 
@@ -162,7 +161,7 @@ public class CheckAccountTransactionApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateCheckAccountTransactionStatusTest() throws ApiException {
+    public void updateCheckAccountTransactionStatusTest() {
         Integer id = null;
         ModelCheckAccountTransaction response = api.updateCheckAccountTransactionStatus(id);
 

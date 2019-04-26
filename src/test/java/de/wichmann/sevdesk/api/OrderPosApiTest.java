@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelOrderPos;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class OrderPosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addOrderPosTest() throws ApiException {
+    public void addOrderPosTest() {
         ModelOrderPos response = api.addOrderPos();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class OrderPosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteOrderPosTest() throws ApiException {
+    public void deleteOrderPosTest() {
         Integer id = null;
         api.deleteOrderPos(id);
 
@@ -68,7 +67,7 @@ public class OrderPosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getOrderPositionsTest() throws ApiException {
+    public void getOrderPositionsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class OrderPosApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateOrderPosTest() throws ApiException {
+    public void updateOrderPosTest() {
         Integer id = null;
         ModelOrderPos response = api.updateOrderPos(id);
 

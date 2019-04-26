@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import org.junit.Test;
 import org.junit.Ignore;
 
@@ -38,7 +37,7 @@ public class SevClientApiTest {
      *          if the Api call fails
      */
     @Test
-    public void sevClientGetSevDeskAccountInvoicesTest() throws ApiException {
+    public void sevClientGetSevDeskAccountInvoicesTest() {
         api.sevClientGetSevDeskAccountInvoices();
 
         // TODO: test validations

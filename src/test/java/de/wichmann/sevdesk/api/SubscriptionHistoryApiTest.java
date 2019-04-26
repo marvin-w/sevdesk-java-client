@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelSubscriptionHistory;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class SubscriptionHistoryApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getSubscriptionHistoryTest() throws ApiException {
+    public void getSubscriptionHistoryTest() {
         List<String> embed = null;
         ModelSubscriptionHistory response = api.getSubscriptionHistory(embed);
 

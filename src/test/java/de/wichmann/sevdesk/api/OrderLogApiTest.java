@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelOrderLog;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class OrderLogApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addOrderLogTest() throws ApiException {
+    public void addOrderLogTest() {
         ModelOrderLog response = api.addOrderLog();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class OrderLogApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteOrderLogTest() throws ApiException {
+    public void deleteOrderLogTest() {
         Integer id = null;
         api.deleteOrderLog(id);
 
@@ -68,7 +67,7 @@ public class OrderLogApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getOrderLogsTest() throws ApiException {
+    public void getOrderLogsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class OrderLogApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateOrderLogTest() throws ApiException {
+    public void updateOrderLogTest() {
         Integer id = null;
         ModelOrderLog response = api.updateOrderLog(id);
 

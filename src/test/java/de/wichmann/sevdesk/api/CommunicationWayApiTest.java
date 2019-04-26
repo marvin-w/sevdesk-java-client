@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelCommunicationWay;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class CommunicationWayApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addCommunicationWayTest() throws ApiException {
+    public void addCommunicationWayTest() {
         ModelCommunicationWay response = api.addCommunicationWay();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class CommunicationWayApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteCommunicationWayTest() throws ApiException {
+    public void deleteCommunicationWayTest() {
         Integer id = null;
         api.deleteCommunicationWay(id);
 
@@ -68,7 +67,7 @@ public class CommunicationWayApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getCommunicationWaysTest() throws ApiException {
+    public void getCommunicationWaysTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class CommunicationWayApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateCommunicationWayTest() throws ApiException {
+    public void updateCommunicationWayTest() {
         Integer id = null;
         ModelCommunicationWay response = api.updateCommunicationWay(id);
 

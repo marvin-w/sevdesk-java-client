@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelAccountingIndex;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class AccountingIndexApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addAccountingIndexTest() throws ApiException {
+    public void addAccountingIndexTest() {
         ModelAccountingIndex response = api.addAccountingIndex();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class AccountingIndexApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteAccountingIndexTest() throws ApiException {
+    public void deleteAccountingIndexTest() {
         Integer id = null;
         api.deleteAccountingIndex(id);
 
@@ -68,7 +67,7 @@ public class AccountingIndexApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getAccountingIndexesTest() throws ApiException {
+    public void getAccountingIndexesTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class AccountingIndexApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateAccountingIndexTest() throws ApiException {
+    public void updateAccountingIndexTest() {
         Integer id = null;
         ModelAccountingIndex response = api.updateAccountingIndex(id);
 

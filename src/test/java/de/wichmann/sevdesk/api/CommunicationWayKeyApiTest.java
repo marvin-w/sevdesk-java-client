@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelCommunicationWayKey;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class CommunicationWayKeyApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getCommunicationWayKeysTest() throws ApiException {
+    public void getCommunicationWayKeysTest() {
         Integer limit = null;
         Integer offset = null;
         ModelCommunicationWayKey response = api.getCommunicationWayKeys(limit, offset);

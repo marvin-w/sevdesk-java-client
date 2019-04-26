@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelPaymentMethod;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class PaymentMethodApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addPaymentMethodTest() throws ApiException {
+    public void addPaymentMethodTest() {
         ModelPaymentMethod response = api.addPaymentMethod();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class PaymentMethodApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deletePaymentMethodTest() throws ApiException {
+    public void deletePaymentMethodTest() {
         Integer id = null;
         api.deletePaymentMethod(id);
 
@@ -68,7 +67,7 @@ public class PaymentMethodApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getPaymentMethodsTest() throws ApiException {
+    public void getPaymentMethodsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class PaymentMethodApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updatePaymentMethodTest() throws ApiException {
+    public void updatePaymentMethodTest() {
         Integer id = null;
         ModelPaymentMethod response = api.updatePaymentMethod(id);
 

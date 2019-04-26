@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import java.io.File;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class DocServerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void docServerDeleteLetterPaperTest() throws ApiException {
+    public void docServerDeleteLetterPaperTest() {
         api.docServerDeleteLetterPaper();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class DocServerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void docServerDeleteTemplateTest() throws ApiException {
+    public void docServerDeleteTemplateTest() {
         api.docServerDeleteTemplate();
 
         // TODO: test validations
@@ -67,7 +66,7 @@ public class DocServerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void docServerGetLetterPapersTest() throws ApiException {
+    public void docServerGetLetterPapersTest() {
         api.docServerGetLetterPapers();
 
         // TODO: test validations
@@ -81,7 +80,7 @@ public class DocServerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void docServerGetLetterPapersWithThumbTest() throws ApiException {
+    public void docServerGetLetterPapersWithThumbTest() {
         api.docServerGetLetterPapersWithThumb();
 
         // TODO: test validations
@@ -95,7 +94,7 @@ public class DocServerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void docServerGetTemplatesTest() throws ApiException {
+    public void docServerGetTemplatesTest() {
         api.docServerGetTemplates();
 
         // TODO: test validations
@@ -109,7 +108,7 @@ public class DocServerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void docServerGetTemplatesWithThumbTest() throws ApiException {
+    public void docServerGetTemplatesWithThumbTest() {
         api.docServerGetTemplatesWithThumb();
 
         // TODO: test validations
@@ -123,7 +122,7 @@ public class DocServerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void docServerSetDefaultLetterPaperTest() throws ApiException {
+    public void docServerSetDefaultLetterPaperTest() {
         api.docServerSetDefaultLetterPaper();
 
         // TODO: test validations
@@ -137,7 +136,7 @@ public class DocServerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void docServerSetDefaultTemplateTest() throws ApiException {
+    public void docServerSetDefaultTemplateTest() {
         api.docServerSetDefaultTemplate();
 
         // TODO: test validations
@@ -151,7 +150,7 @@ public class DocServerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void docServerStoreLetterPaperTest() throws ApiException {
+    public void docServerStoreLetterPaperTest() {
         api.docServerStoreLetterPaper();
 
         // TODO: test validations
@@ -165,7 +164,7 @@ public class DocServerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void docServerStoreTemplateTest() throws ApiException {
+    public void docServerStoreTemplateTest() {
         api.docServerStoreTemplate();
 
         // TODO: test validations
@@ -179,7 +178,7 @@ public class DocServerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void docServerTestLetterPaperTest() throws ApiException {
+    public void docServerTestLetterPaperTest() {
         File file = null;
         api.docServerTestLetterPaper(file);
 
@@ -194,7 +193,7 @@ public class DocServerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void docServerTestTemplateTest() throws ApiException {
+    public void docServerTestTemplateTest() {
         api.docServerTestTemplate();
 
         // TODO: test validations

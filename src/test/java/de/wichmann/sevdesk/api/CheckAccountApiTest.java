@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelCheckAccount;
 import de.wichmann.sevdesk.model.ModelDiscounts;
 import org.junit.Test;
@@ -40,7 +39,7 @@ public class CheckAccountApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addCheckAccountTest() throws ApiException {
+    public void addCheckAccountTest() {
         ModelCheckAccount response = api.addCheckAccount();
 
         // TODO: test validations
@@ -54,7 +53,7 @@ public class CheckAccountApiTest {
      *          if the Api call fails
      */
     @Test
-    public void checkAccountGetCurrentBalanceTest() throws ApiException {
+    public void checkAccountGetCurrentBalanceTest() {
         Integer id = null;
         api.checkAccountGetCurrentBalance(id);
 
@@ -69,7 +68,7 @@ public class CheckAccountApiTest {
      *          if the Api call fails
      */
     @Test
-    public void checkAccountGetPaymentIsSupportedTest() throws ApiException {
+    public void checkAccountGetPaymentIsSupportedTest() {
         api.checkAccountGetPaymentIsSupported();
 
         // TODO: test validations
@@ -83,7 +82,7 @@ public class CheckAccountApiTest {
      *          if the Api call fails
      */
     @Test
-    public void checkAccountSetDefaultTest() throws ApiException {
+    public void checkAccountSetDefaultTest() {
         Integer id = null;
         api.checkAccountSetDefault(id);
 
@@ -98,7 +97,7 @@ public class CheckAccountApiTest {
      *          if the Api call fails
      */
     @Test
-    public void checkAccountTransferTest() throws ApiException {
+    public void checkAccountTransferTest() {
         Integer id = null;
         String amount = null;
         Integer targetId = null;
@@ -117,7 +116,7 @@ public class CheckAccountApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteCheckAccountTest() throws ApiException {
+    public void deleteCheckAccountTest() {
         Integer id = null;
         api.deleteCheckAccount(id);
 
@@ -132,7 +131,7 @@ public class CheckAccountApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getCheckAccountsTest() throws ApiException {
+    public void getCheckAccountsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -149,7 +148,7 @@ public class CheckAccountApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateCheckAccountTest() throws ApiException {
+    public void updateCheckAccountTest() {
         Integer id = null;
         ModelCheckAccount response = api.updateCheckAccount(id);
 

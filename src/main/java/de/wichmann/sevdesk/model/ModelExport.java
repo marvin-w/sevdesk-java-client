@@ -17,7 +17,7 @@ package de.wichmann.sevdesk.model;
  * ModelExport
  */
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2019-04-26T00:13:41.764+02:00[Europe/Berlin]")public class ModelExport {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2019-04-26T00:58:42.052+02:00[Europe/Berlin]")public class ModelExport {
   @Override
   public boolean equals(java.lang.Object o) {
     if (this == o) {

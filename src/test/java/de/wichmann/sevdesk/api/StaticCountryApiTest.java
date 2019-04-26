@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import org.junit.Test;
 import org.junit.Ignore;
 
@@ -38,7 +37,7 @@ public class StaticCountryApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getStaticCountryTest() throws ApiException {
+    public void getStaticCountryTest() {
         api.getStaticCountry();
 
         // TODO: test validations
@@ -52,7 +51,7 @@ public class StaticCountryApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getStaticIndustryTest() throws ApiException {
+    public void getStaticIndustryTest() {
         api.getStaticIndustry();
 
         // TODO: test validations

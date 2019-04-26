@@ -1,11 +1,6 @@
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.ApiClient;
-import de.wichmann.sevdesk.Configuration;
-import de.wichmann.sevdesk.Pair;
-
-import javax.ws.rs.core.GenericType;
 
 import de.wichmann.sevdesk.model.ModelCommunicationWayKey;
 
@@ -14,61 +9,72 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2019-04-26T00:13:41.764+02:00[Europe/Berlin]")public class CommunicationWayKeyApi {
-  private ApiClient apiClient;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
+import org.springframework.web.client.RestClientException;
+import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.util.UriComponentsBuilder;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 
-  public CommunicationWayKeyApi() {
-    this(Configuration.getDefaultApiClient());
-  }
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2019-04-26T00:58:42.052+02:00[Europe/Berlin]")@Component("de.wichmann.sevdesk.api.CommunicationWayKeyApi")
+public class CommunicationWayKeyApi {
+    private ApiClient apiClient;
 
-  public CommunicationWayKeyApi(ApiClient apiClient) {
-    this.apiClient = apiClient;
-  }
+    public CommunicationWayKeyApi() {
+        this(new ApiClient());
+    }
 
-  public ApiClient getApiClient() {
-    return apiClient;
-  }
+    @Autowired
+    public CommunicationWayKeyApi(ApiClient apiClient) {
+        this.apiClient = apiClient;
+    }
 
-  public void setApiClient(ApiClient apiClient) {
-    this.apiClient = apiClient;
-  }
+    public ApiClient getApiClient() {
+        return apiClient;
+    }
 
-  /**
-   * Get an overview of all communication way keys
-   * Calls CommunicationWayKey.php to get necessary variables.
-   * @param limit Limits the number of entries returned. Default is 100 (optional)
-   * @param offset Set the index where the returned communication way keys start. Default is 0 (optional)
-   * @return ModelCommunicationWayKey
-   * @throws ApiException if fails to make API call
-   */
-  public ModelCommunicationWayKey getCommunicationWayKeys(Integer limit, Integer offset) throws ApiException {
-    Object localVarPostBody = null;
-    // create path and map variables
-    String localVarPath = "/CommunicationWayKey".replaceAll("\\{format\\}","json");
+    public void setApiClient(ApiClient apiClient) {
+        this.apiClient = apiClient;
+    }
 
-    // query params
-    List<Pair> localVarQueryParams = new ArrayList<Pair>();
-    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+    /**
+     * Get an overview of all communication way keys
+     * Calls CommunicationWayKey.php to get necessary variables.
+     * <p><b>200</b> - successful operation
+     * <p><b>400</b> - invalid request
+     * <p><b>401</b> - authentication required
+     * @param limit Limits the number of entries returned. Default is 100
+     * @param offset Set the index where the returned communication way keys start. Default is 0
+     * @return ModelCommunicationWayKey
+     * @throws RestClientException if an error occurs while attempting to invoke the API
+     */
+    public ModelCommunicationWayKey getCommunicationWayKeys(Integer limit, Integer offset) throws RestClientException {
+        Object postBody = null;
+        String path = UriComponentsBuilder.fromPath("/CommunicationWayKey").build().toUriString();
+        
+        final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
+        final HttpHeaders headerParams = new HttpHeaders();
+        final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
+        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "limit", limit));
+        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "offset", offset));
 
-    localVarQueryParams.addAll(apiClient.parameterToPairs("", "limit", limit));
-    localVarQueryParams.addAll(apiClient.parameterToPairs("", "offset", offset));
+        final String[] accepts = { 
+            "application/xml", "application/json"
+         };
+        final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
+        final String[] contentTypes = {  };
+        final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);
 
-    
-    
-    final String[] localVarAccepts = {
-      "application/xml", "application/json"
-    };
-    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+        String[] authNames = new String[] { "api_key" };
 
-    final String[] localVarContentTypes = {
-      
-    };
-    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
-
-    String[] localVarAuthNames = new String[] { "api_key" };
-
-    GenericType<ModelCommunicationWayKey> localVarReturnType = new GenericType<ModelCommunicationWayKey>() {};
-    return apiClient.invokeAPI(localVarPath, "GET", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
-  }
+        ParameterizedTypeReference<ModelCommunicationWayKey> returnType = new ParameterizedTypeReference<ModelCommunicationWayKey>() {};
+        return apiClient.invokeAPI(path, HttpMethod.GET, queryParams, postBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    }
 }

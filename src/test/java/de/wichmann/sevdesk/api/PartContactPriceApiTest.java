@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelPartContactPrice;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class PartContactPriceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addPartContactPriceTest() throws ApiException {
+    public void addPartContactPriceTest() {
         ModelPartContactPrice response = api.addPartContactPrice();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class PartContactPriceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deletePartContactPriceTest() throws ApiException {
+    public void deletePartContactPriceTest() {
         Integer id = null;
         api.deletePartContactPrice(id);
 
@@ -68,7 +67,7 @@ public class PartContactPriceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getPartContactPricesTest() throws ApiException {
+    public void getPartContactPricesTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class PartContactPriceApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updatePartContactPriceTest() throws ApiException {
+    public void updatePartContactPriceTest() {
         Integer id = null;
         ModelPartContactPrice response = api.updatePartContactPrice(id);
 

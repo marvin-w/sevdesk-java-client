@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelSevUser;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class SevUserApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getSevUserTest() throws ApiException {
+    public void getSevUserTest() {
         List<String> embed = null;
         ModelSevUser response = api.getSevUser(embed);
 
@@ -54,7 +53,7 @@ public class SevUserApiTest {
      *          if the Api call fails
      */
     @Test
-    public void sevUserGetApiTokenTest() throws ApiException {
+    public void sevUserGetApiTokenTest() {
         api.sevUserGetApiToken();
 
         // TODO: test validations

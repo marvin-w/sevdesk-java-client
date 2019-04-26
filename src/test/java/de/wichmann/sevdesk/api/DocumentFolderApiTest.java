@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelDocumentFolder;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class DocumentFolderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addDocumentFolderTest() throws ApiException {
+    public void addDocumentFolderTest() {
         ModelDocumentFolder response = api.addDocumentFolder();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class DocumentFolderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteDocumentFolderTest() throws ApiException {
+    public void deleteDocumentFolderTest() {
         Integer id = null;
         api.deleteDocumentFolder(id);
 
@@ -68,7 +67,7 @@ public class DocumentFolderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void emptyBinTest() throws ApiException {
+    public void emptyBinTest() {
         api.emptyBin();
 
         // TODO: test validations
@@ -82,7 +81,7 @@ public class DocumentFolderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getDocumentFolderChildrenTest() throws ApiException {
+    public void getDocumentFolderChildrenTest() {
         Integer id = null;
         Integer limit = null;
         Integer offset = null;
@@ -100,7 +99,7 @@ public class DocumentFolderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getDocumentFolderDocumentsTest() throws ApiException {
+    public void getDocumentFolderDocumentsTest() {
         Integer id = null;
         Integer limit = null;
         Integer offset = null;
@@ -118,7 +117,7 @@ public class DocumentFolderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getDocumentFolderFoldersTest() throws ApiException {
+    public void getDocumentFolderFoldersTest() {
         Integer id = null;
         Integer limit = null;
         Integer offset = null;
@@ -136,7 +135,7 @@ public class DocumentFolderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getDocumentFolderPathTest() throws ApiException {
+    public void getDocumentFolderPathTest() {
         Integer id = null;
         ModelDocumentFolder response = api.getDocumentFolderPath(id);
 
@@ -151,7 +150,7 @@ public class DocumentFolderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getDocumentFoldersTest() throws ApiException {
+    public void getDocumentFoldersTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -168,7 +167,7 @@ public class DocumentFolderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void trashDocumentFolderTest() throws ApiException {
+    public void trashDocumentFolderTest() {
         Integer id = null;
         api.trashDocumentFolder(id);
 
@@ -183,7 +182,7 @@ public class DocumentFolderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateDocumentFolderTest() throws ApiException {
+    public void updateDocumentFolderTest() {
         Integer id = null;
         ModelDocumentFolder response = api.updateDocumentFolder(id);
 

@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelEmail;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class EmailApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addEmailTest() throws ApiException {
+    public void addEmailTest() {
         ModelEmail response = api.addEmail();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class EmailApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteEmailTest() throws ApiException {
+    public void deleteEmailTest() {
         Integer id = null;
         api.deleteEmail(id);
 
@@ -68,7 +67,7 @@ public class EmailApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getEmailsTest() throws ApiException {
+    public void getEmailsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class EmailApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateEmailTest() throws ApiException {
+    public void updateEmailTest() {
         Integer id = null;
         ModelEmail response = api.updateEmail(id);
 

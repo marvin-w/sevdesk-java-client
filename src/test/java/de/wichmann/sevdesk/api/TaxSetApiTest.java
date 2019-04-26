@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelTaxSet;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class TaxSetApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addTaxSetTest() throws ApiException {
+    public void addTaxSetTest() {
         ModelTaxSet response = api.addTaxSet();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class TaxSetApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteTaxSetTest() throws ApiException {
+    public void deleteTaxSetTest() {
         Integer id = null;
         api.deleteTaxSet(id);
 
@@ -68,7 +67,7 @@ public class TaxSetApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getTaxSetsTest() throws ApiException {
+    public void getTaxSetsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class TaxSetApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateTaxSetTest() throws ApiException {
+    public void updateTaxSetTest() {
         Integer id = null;
         ModelTaxSet response = api.updateTaxSet(id);
 

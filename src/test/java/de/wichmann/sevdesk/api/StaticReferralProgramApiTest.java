@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelStaticReferralProgram;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class StaticReferralProgramApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getStaticReferralProgramsTest() throws ApiException {
+    public void getStaticReferralProgramsTest() {
         ModelStaticReferralProgram response = api.getStaticReferralPrograms();
 
         // TODO: test validations

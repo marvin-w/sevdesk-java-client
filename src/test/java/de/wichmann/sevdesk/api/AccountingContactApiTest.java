@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelAccountingContact;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class AccountingContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void accountingContactIsAvailableDebitorCreditorNumberTest() throws ApiException {
+    public void accountingContactIsAvailableDebitorCreditorNumberTest() {
         Integer contactId = null;
         String contactObjectName = null;
         String debitorNumber = null;
@@ -57,7 +56,7 @@ public class AccountingContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addAccountingContactTest() throws ApiException {
+    public void addAccountingContactTest() {
         ModelAccountingContact response = api.addAccountingContact();
 
         // TODO: test validations
@@ -71,7 +70,7 @@ public class AccountingContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteAccountingContactTest() throws ApiException {
+    public void deleteAccountingContactTest() {
         Integer id = null;
         api.deleteAccountingContact(id);
 
@@ -86,7 +85,7 @@ public class AccountingContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getAccountingContactsTest() throws ApiException {
+    public void getAccountingContactsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -103,7 +102,7 @@ public class AccountingContactApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateAccountingContactTest() throws ApiException {
+    public void updateAccountingContactTest() {
         Integer id = null;
         ModelAccountingContact response = api.updateAccountingContact(id);
 

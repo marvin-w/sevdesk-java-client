@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelOrderPos;
 import de.wichmann.sevdesk.model.ModelUnity;
 import org.junit.Test;
@@ -40,7 +39,7 @@ public class UnityApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addUnityTest() throws ApiException {
+    public void addUnityTest() {
         ModelOrderPos response = api.addUnity();
 
         // TODO: test validations
@@ -54,7 +53,7 @@ public class UnityApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteUnityTest() throws ApiException {
+    public void deleteUnityTest() {
         Integer id = null;
         api.deleteUnity(id);
 
@@ -69,7 +68,7 @@ public class UnityApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getUnitiesTest() throws ApiException {
+    public void getUnitiesTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -86,7 +85,7 @@ public class UnityApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateUnityTest() throws ApiException {
+    public void updateUnityTest() {
         Integer id = null;
         ModelUnity response = api.updateUnity(id);
 

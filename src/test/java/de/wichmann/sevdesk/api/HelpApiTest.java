@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelHelp;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class HelpApiTest {
      *          if the Api call fails
      */
     @Test
-    public void helpGetArticleTest() throws ApiException {
+    public void helpGetArticleTest() {
         Integer articleId = null;
         ModelHelp response = api.helpGetArticle(articleId);
 
@@ -54,7 +53,7 @@ public class HelpApiTest {
      *          if the Api call fails
      */
     @Test
-    public void helpGetArticlesTest() throws ApiException {
+    public void helpGetArticlesTest() {
         Integer sectionId = null;
         Integer limit = null;
         Integer offset = null;
@@ -71,7 +70,7 @@ public class HelpApiTest {
      *          if the Api call fails
      */
     @Test
-    public void helpGetCategoriesTest() throws ApiException {
+    public void helpGetCategoriesTest() {
         Integer limit = null;
         Integer offset = null;
         ModelHelp response = api.helpGetCategories(limit, offset);
@@ -87,7 +86,7 @@ public class HelpApiTest {
      *          if the Api call fails
      */
     @Test
-    public void helpGetSectionsTest() throws ApiException {
+    public void helpGetSectionsTest() {
         Integer limit = null;
         Integer offset = null;
         ModelHelp response = api.helpGetSections(limit, offset);
@@ -103,7 +102,7 @@ public class HelpApiTest {
      *          if the Api call fails
      */
     @Test
-    public void helpSearchArticlesTest() throws ApiException {
+    public void helpSearchArticlesTest() {
         String name = null;
         ModelHelp response = api.helpSearchArticles(name);
 

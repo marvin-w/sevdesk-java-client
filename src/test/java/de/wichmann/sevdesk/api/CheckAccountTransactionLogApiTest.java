@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelCheckAccountTransactionLog;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class CheckAccountTransactionLogApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addCheckAccountTransactionLogTest() throws ApiException {
+    public void addCheckAccountTransactionLogTest() {
         ModelCheckAccountTransactionLog response = api.addCheckAccountTransactionLog();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class CheckAccountTransactionLogApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteCheckAccountTransactionLogTest() throws ApiException {
+    public void deleteCheckAccountTransactionLogTest() {
         Integer id = null;
         api.deleteCheckAccountTransactionLog(id);
 
@@ -68,7 +67,7 @@ public class CheckAccountTransactionLogApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getCheckAccountTransactionLogTest() throws ApiException {
+    public void getCheckAccountTransactionLogTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class CheckAccountTransactionLogApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateCheckAccountTransactionLogTest() throws ApiException {
+    public void updateCheckAccountTransactionLogTest() {
         Integer id = null;
         ModelCheckAccountTransactionLog response = api.updateCheckAccountTransactionLog(id);
 

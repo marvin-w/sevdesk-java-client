@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelTextTemplate;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class TextTemplateApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addTextTemplateTest() throws ApiException {
+    public void addTextTemplateTest() {
         ModelTextTemplate response = api.addTextTemplate();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class TextTemplateApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteTextTemplateTest() throws ApiException {
+    public void deleteTextTemplateTest() {
         Integer id = null;
         api.deleteTextTemplate(id);
 
@@ -68,7 +67,7 @@ public class TextTemplateApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getTextTemplateTest() throws ApiException {
+    public void getTextTemplateTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class TextTemplateApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateTextTemplateTest() throws ApiException {
+    public void updateTextTemplateTest() {
         Integer id = null;
         ModelTextTemplate response = api.updateTextTemplate(id);
 

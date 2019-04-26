@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import java.io.File;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class ReportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void reportContactTest() throws ApiException {
+    public void reportContactTest() {
         Boolean download = null;
         Integer contactId = null;
         String contactObjectName = null;
@@ -56,7 +55,7 @@ public class ReportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void reportContactListTest() throws ApiException {
+    public void reportContactListTest() {
         String sevQueryModelName = null;
         String sevQueryObjectName = null;
         Boolean download = null;
@@ -75,7 +74,7 @@ public class ReportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void reportInventoryTest() throws ApiException {
+    public void reportInventoryTest() {
         String sevQueryModelName = null;
         String sevQueryObjectName = null;
         Boolean download = null;
@@ -94,7 +93,7 @@ public class ReportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void reportInvoiceListTest() throws ApiException {
+    public void reportInvoiceListTest() {
         String sevQueryModelName = null;
         String sevQueryObjectName = null;
         Boolean download = null;
@@ -113,7 +112,7 @@ public class ReportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void reportOrderListTest() throws ApiException {
+    public void reportOrderListTest() {
         String sevQueryModelName = null;
         String sevQueryObjectName = null;
         Boolean download = null;
@@ -132,7 +131,7 @@ public class ReportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void reportProfitAndLossTest() throws ApiException {
+    public void reportProfitAndLossTest() {
         String startDate = null;
         String endDate = null;
         Boolean taxRule = null;
@@ -150,7 +149,7 @@ public class ReportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void reportRegisterBookTest() throws ApiException {
+    public void reportRegisterBookTest() {
         Integer checkAccountId = null;
         String checkAccountObjectName = null;
         String startDate = null;
@@ -169,7 +168,7 @@ public class ReportApiTest {
      *          if the Api call fails
      */
     @Test
-    public void reportVoucherListTest() throws ApiException {
+    public void reportVoucherListTest() {
         String sevQueryFilterStartDate = null;
         String sevQueryModelName = null;
         String sevQueryObjectName = null;

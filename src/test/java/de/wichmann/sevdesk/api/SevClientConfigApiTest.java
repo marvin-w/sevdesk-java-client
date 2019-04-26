@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelSevClientConfig;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class SevClientConfigApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getSevClientConfigTest() throws ApiException {
+    public void getSevClientConfigTest() {
         List<String> embed = null;
         ModelSevClientConfig response = api.getSevClientConfig(embed);
 
@@ -54,7 +53,7 @@ public class SevClientConfigApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateSevClientConfigTest() throws ApiException {
+    public void updateSevClientConfigTest() {
         Integer id = null;
         ModelSevClientConfig response = api.updateSevClientConfig(id);
 

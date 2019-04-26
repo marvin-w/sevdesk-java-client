@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelCategory;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class CategoryApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addCategoryTest() throws ApiException {
+    public void addCategoryTest() {
         ModelCategory response = api.addCategory();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class CategoryApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteCategoryTest() throws ApiException {
+    public void deleteCategoryTest() {
         Integer id = null;
         api.deleteCategory(id);
 
@@ -68,7 +67,7 @@ public class CategoryApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getCategoriesTest() throws ApiException {
+    public void getCategoriesTest() {
         Integer limit = null;
         Integer offset = null;
         ModelCategory response = api.getCategories(limit, offset);
@@ -84,7 +83,7 @@ public class CategoryApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateCategoryTest() throws ApiException {
+    public void updateCategoryTest() {
         Integer id = null;
         ModelCategory response = api.updateCategory(id);
 

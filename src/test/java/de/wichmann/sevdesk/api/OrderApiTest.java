@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelDiscounts;
 import de.wichmann.sevdesk.model.ModelEmail;
 import de.wichmann.sevdesk.model.ModelOrder;
@@ -42,7 +41,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addOrderTest() throws ApiException {
+    public void addOrderTest() {
         ModelOrder response = api.addOrder();
 
         // TODO: test validations
@@ -56,7 +55,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void copyOrderTest() throws ApiException {
+    public void copyOrderTest() {
         Integer id = null;
         ModelOrder response = api.copyOrder(id);
 
@@ -71,7 +70,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteOrderTest() throws ApiException {
+    public void deleteOrderTest() {
         Integer id = null;
         api.deleteOrder(id);
 
@@ -86,7 +85,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void duplicateOrderTest() throws ApiException {
+    public void duplicateOrderTest() {
         Integer id = null;
         ModelOrder response = api.duplicateOrder(id);
 
@@ -101,7 +100,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getNextOrderNumberTest() throws ApiException {
+    public void getNextOrderNumberTest() {
         String orderType = null;
         Boolean useNextNumber = null;
         api.getNextOrderNumber(orderType, useNextNumber);
@@ -117,7 +116,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getOrderDiscountsTest() throws ApiException {
+    public void getOrderDiscountsTest() {
         Integer id = null;
         Integer limit = null;
         Integer offset = null;
@@ -135,7 +134,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getOrdersTest() throws ApiException {
+    public void getOrdersTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -152,7 +151,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void orderChangeStatusTest() throws ApiException {
+    public void orderChangeStatusTest() {
         Integer id = null;
         ModelOrder response = api.orderChangeStatus(id);
 
@@ -167,7 +166,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void orderGetChargeableInformationTest() throws ApiException {
+    public void orderGetChargeableInformationTest() {
         Integer id = null;
         api.orderGetChargeableInformation(id);
 
@@ -182,7 +181,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void orderGetChargeableSumsTest() throws ApiException {
+    public void orderGetChargeableSumsTest() {
         Integer id = null;
         api.orderGetChargeableSums(id);
 
@@ -197,7 +196,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void orderGetMainOrderByLogsTest() throws ApiException {
+    public void orderGetMainOrderByLogsTest() {
         Integer id = null;
         ModelOrder response = api.orderGetMainOrderByLogs(id);
 
@@ -212,7 +211,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void orderGetPdfTest() throws ApiException {
+    public void orderGetPdfTest() {
         Integer id = null;
         Boolean preventSendBy = null;
         api.orderGetPdf(id, preventSendBy);
@@ -228,7 +227,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void orderGetPositionsTest() throws ApiException {
+    public void orderGetPositionsTest() {
         Integer id = null;
         Boolean withOptional = null;
         Boolean onlyChargeable = null;
@@ -248,7 +247,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void orderGetRelatedObjectsTest() throws ApiException {
+    public void orderGetRelatedObjectsTest() {
         Integer id = null;
         Boolean includeItself = null;
         Boolean sortByType = null;
@@ -266,7 +265,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void orderGetTagsTest() throws ApiException {
+    public void orderGetTagsTest() {
         Integer id = null;
         List<String> embed = null;
         api.orderGetTags(id, embed);
@@ -282,7 +281,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void orderGetTaxTest() throws ApiException {
+    public void orderGetTaxTest() {
         Integer id = null;
         Boolean foreignCurrency = null;
         api.orderGetTax(id, foreignCurrency);
@@ -298,7 +297,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void orderGetTaxGroupesTest() throws ApiException {
+    public void orderGetTaxGroupesTest() {
         Integer id = null;
         api.orderGetTaxGroupes(id);
 
@@ -313,7 +312,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void orderGetTotalTest() throws ApiException {
+    public void orderGetTotalTest() {
         Integer id = null;
         Boolean foreignCurrency = null;
         api.orderGetTotal(id, foreignCurrency);
@@ -329,7 +328,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void orderGetTotalCalcTest() throws ApiException {
+    public void orderGetTotalCalcTest() {
         Integer id = null;
         api.orderGetTotalCalc(id);
 
@@ -344,7 +343,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void orderGetTotalNetTest() throws ApiException {
+    public void orderGetTotalNetTest() {
         Integer id = null;
         api.orderGetTotalNet(id);
 
@@ -359,7 +358,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void orderRenderTest() throws ApiException {
+    public void orderRenderTest() {
         Integer id = null;
         api.orderRender(id);
 
@@ -374,7 +373,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void orderSendByTest() throws ApiException {
+    public void orderSendByTest() {
         Integer id = null;
         String sendType = null;
         ModelOrder response = api.orderSendBy(id, sendType);
@@ -390,7 +389,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void sendOrderViaEmailTest() throws ApiException {
+    public void sendOrderViaEmailTest() {
         Integer id = null;
         ModelEmail response = api.sendOrderViaEmail(id);
 
@@ -405,7 +404,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void sendOrderViaPostTest() throws ApiException {
+    public void sendOrderViaPostTest() {
         Integer id = null;
         ModelOrder response = api.sendOrderViaPost(id);
 
@@ -420,7 +419,7 @@ public class OrderApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateOrderTest() throws ApiException {
+    public void updateOrderTest() {
         Integer id = null;
         ModelOrder response = api.updateOrder(id);
 

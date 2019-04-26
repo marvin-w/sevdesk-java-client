@@ -23,7 +23,7 @@ import java.time.OffsetDateTime;
  * The inventory part log contains all part bookings (acquisition/dispatch)
  */
 @Schema(description = "The inventory part log contains all part bookings (acquisition/dispatch)")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2019-04-26T00:13:41.764+02:00[Europe/Berlin]")public class ModelInventoryPartLog {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2019-04-26T00:58:42.052+02:00[Europe/Berlin]")public class ModelInventoryPartLog {
 
   @JsonProperty("create")
 

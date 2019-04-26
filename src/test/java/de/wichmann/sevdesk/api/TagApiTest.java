@@ -12,7 +12,6 @@
 
 package de.wichmann.sevdesk.api;
 
-import de.wichmann.sevdesk.ApiException;
 import de.wichmann.sevdesk.model.ModelTag;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -39,7 +38,7 @@ public class TagApiTest {
      *          if the Api call fails
      */
     @Test
-    public void addTagTest() throws ApiException {
+    public void addTagTest() {
         ModelTag response = api.addTag();
 
         // TODO: test validations
@@ -53,7 +52,7 @@ public class TagApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteTagTest() throws ApiException {
+    public void deleteTagTest() {
         Integer id = null;
         api.deleteTag(id);
 
@@ -68,7 +67,7 @@ public class TagApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getTagsTest() throws ApiException {
+    public void getTagsTest() {
         Integer limit = null;
         Integer offset = null;
         List<String> embed = null;
@@ -85,7 +84,7 @@ public class TagApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateTagTest() throws ApiException {
+    public void updateTagTest() {
         Integer id = null;
         ModelTag response = api.updateTag(id);
 
