@@ -305,7 +305,7 @@ public class InvoiceApi {
      * @param download If true PDF will return as filestream otherwise as json object the content base64 encoded
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public void getInvoiceAsPdf(Integer id, Boolean download) throws RestClientException {
+    public Byte[] getInvoiceAsPdf(Integer id, Boolean download) throws RestClientException {
         Object postBody = null;
         // verify the required parameter 'id' is set
         if (id == null) {
@@ -332,8 +332,8 @@ public class InvoiceApi {
 
         String[] authNames = new String[] { "api_key" };
 
-        ParameterizedTypeReference<Void> returnType = new ParameterizedTypeReference<Void>() {};
-        apiClient.invokeAPI(path, HttpMethod.GET, queryParams, postBody, headerParams, formParams, accept, contentType, authNames, returnType);
+        ParameterizedTypeReference<Byte[]> returnType = new ParameterizedTypeReference<Byte[]>() {};
+        return apiClient.invokeAPI(path, HttpMethod.GET, queryParams, postBody, headerParams, formParams, accept, contentType, authNames, returnType);
     }
     /**
      * Get (monetary) amount of all reminders of an invoice
@@ -459,7 +459,7 @@ public class InvoiceApi {
      * @return ModelInvoice
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public ModelInvoice invoiceAddPosition(Integer id) throws RestClientException {
+    public ModelInvoice invoiceAddPosition(Integer id, MultiValueMap<String, Object> params) throws RestClientException {
         Object postBody = null;
         // verify the required parameter 'id' is set
         if (id == null) {
@@ -472,7 +472,7 @@ public class InvoiceApi {
         
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
-        final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
+        final MultiValueMap<String, Object> formParams = params;
 
         final String[] accepts = { 
             "application/xml", "application/json"
