@@ -15,6 +15,7 @@ package de.wichmann.sevdesk.model;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonRootName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import de.wichmann.sevdesk.model.ModelInvoice;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -24,7 +25,9 @@ import java.time.OffsetDateTime;
  * ModelEmail
  */
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2019-04-26T00:58:42.052+02:00[Europe/Berlin]")public class ModelEmail {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2019-04-26T00:58:42.052+02:00[Europe/Berlin]")
+@JsonRootName(value = "objects")
+public class ModelEmail {
 
   @JsonProperty("create")
 

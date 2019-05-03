@@ -11,6 +11,7 @@ import de.wichmann.sevdesk.model.ModelInvoice;
 import de.wichmann.sevdesk.model.ModelInvoiceFactory;
 import de.wichmann.sevdesk.model.ModelInvoiceLog;
 import de.wichmann.sevdesk.model.ModelInvoicePos;
+import de.wichmann.sevdesk.model.ModelRender;
 import de.wichmann.sevdesk.model.ModelTag;
 
 import java.util.ArrayList;
@@ -305,7 +306,7 @@ public class InvoiceApi {
      * @param download If true PDF will return as filestream otherwise as json object the content base64 encoded
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public Byte[] getInvoiceAsPdf(Integer id, Boolean download) throws RestClientException {
+    public String getInvoiceAsPdf(Integer id, Boolean download) throws RestClientException {
         Object postBody = null;
         // verify the required parameter 'id' is set
         if (id == null) {
@@ -332,7 +333,7 @@ public class InvoiceApi {
 
         String[] authNames = new String[] { "api_key" };
 
-        ParameterizedTypeReference<Byte[]> returnType = new ParameterizedTypeReference<Byte[]>() {};
+        ParameterizedTypeReference<String> returnType = new ParameterizedTypeReference<String>() {};
         return apiClient.invokeAPI(path, HttpMethod.GET, queryParams, postBody, headerParams, formParams, accept, contentType, authNames, returnType);
     }
     /**
@@ -1629,7 +1630,7 @@ public class InvoiceApi {
      * @param id Id of invoice of which you want to render the document and get the metadata
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public void invoiceRender(Integer id) throws RestClientException {
+    public ModelRender invoiceRender(Integer id) throws RestClientException {
         Object postBody = null;
         // verify the required parameter 'id' is set
         if (id == null) {
@@ -1651,8 +1652,8 @@ public class InvoiceApi {
 
         String[] authNames = new String[] { "api_key" };
 
-        ParameterizedTypeReference<Void> returnType = new ParameterizedTypeReference<Void>() {};
-        apiClient.invokeAPI(path, HttpMethod.POST, queryParams, postBody, headerParams, formParams, accept, contentType, authNames, returnType);
+        ParameterizedTypeReference<ModelRender> returnType = new ParameterizedTypeReference<ModelRender>() {};
+        return apiClient.invokeAPI(path, HttpMethod.POST, queryParams, postBody, headerParams, formParams, accept, contentType, authNames, returnType);
     }
     /**
      * Send invoice by desired method
@@ -1738,7 +1739,7 @@ public class InvoiceApi {
      * @return ModelEmail
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public ModelEmail sendInvoiceViaEmail(Integer id) throws RestClientException {
+    public ModelEmail sendInvoiceViaEmail(Integer id, MultiValueMap<String, Object> forms) throws RestClientException {
         Object postBody = null;
         // verify the required parameter 'id' is set
         if (id == null) {
@@ -1751,7 +1752,7 @@ public class InvoiceApi {
         
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
-        final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
+        final MultiValueMap<String, Object> formParams = forms;
 
         final String[] accepts = { 
             "application/xml", "application/json"
