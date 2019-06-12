@@ -17,7 +17,6 @@ import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonRootName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
@@ -31,7 +30,6 @@ import io.swagger.v3.oas.annotations.media.Schema;
  */
 
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2019-04-26T00:58:42.052+02:00[Europe/Berlin]")
-@JsonRootName(value = "objects")
 public class ModelInvoice
 {
 
@@ -181,6 +179,7 @@ public class ModelInvoice
 
 
 	}
+
 	@JsonProperty("taxText")
 
 	private TaxTextEnum taxText = null;
@@ -240,6 +239,7 @@ public class ModelInvoice
 
 
 	}
+
 	@JsonProperty("taxType")
 
 	private TaxTypeEnum taxType = null;
@@ -303,6 +303,7 @@ public class ModelInvoice
 
 
 	}
+
 	@JsonProperty("invoiceType")
 
 	private InvoiceTypeEnum invoiceType = null;

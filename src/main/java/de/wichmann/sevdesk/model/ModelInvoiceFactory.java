@@ -15,7 +15,6 @@ package de.wichmann.sevdesk.model;
 import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonRootName;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 
@@ -24,7 +23,6 @@ import io.swagger.v3.oas.annotations.media.Schema;
  */
 @Schema(description = "Below are the models which can be used for the functions in Invoice/Factory.php. Beware that you need to use them without the underscore at the beginning!")
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2019-04-26T00:58:42.052+02:00[Europe/Berlin]")
-@JsonRootName(value = "objects")
 public class ModelInvoiceFactory
 {
 

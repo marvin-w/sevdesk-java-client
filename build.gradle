@@ -2,7 +2,7 @@ apply plugin: 'idea'
 apply plugin: 'eclipse'
 
 group = 'de.wichmann.sevdesk'
-version = '1.2.8'
+version = '1.2.9'
 
 buildscript {
 	repositories {

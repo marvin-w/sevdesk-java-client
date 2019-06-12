@@ -14,7 +14,6 @@ import de.wichmann.sevdesk.model.ModelInvoicePos;
 import de.wichmann.sevdesk.model.ModelRender;
 import de.wichmann.sevdesk.model.ModelTag;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,7 +26,6 @@ import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.util.UriComponentsBuilder;
 import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.core.io.FileSystemResource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
@@ -56,7 +54,7 @@ public class InvoiceApi {
 
     /**
      * Create a new invoice
-     * Calls Invoice.php 
+     * Calls Invoice.php
      * <p><b>201</b> - created
      * <p><b>400</b> - invalid request
      * <p><b>401</b> - authentication required
@@ -66,16 +64,16 @@ public class InvoiceApi {
     public ModelInvoice addInvoice(MultiValueMap<String, Object> params) throws RestClientException {
         Object postBody = null;
         String path = UriComponentsBuilder.fromPath("/Invoice").build().toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = params;
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
-        final String[] contentTypes = { 
+        final String[] contentTypes = {
             "application/x-www-form-urlencoded"
          };
         final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);
@@ -87,7 +85,7 @@ public class InvoiceApi {
     }
     /**
      * Cancel an invoice
-     * Calls cancel() in Invoice.php to cancel an invoice and creates a cancellation invoice  
+     * Calls cancel() in Invoice.php to cancel an invoice and creates a cancellation invoice
      * <p><b>200</b> - successful operation
      * <p><b>400</b> - invalid request
      * <p><b>401</b> - authentication required
@@ -105,12 +103,12 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/cancel").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -134,16 +132,16 @@ public class InvoiceApi {
     public ModelInvoice createInvoiceFromOrder() throws RestClientException {
         Object postBody = null;
         String path = UriComponentsBuilder.fromPath("/Invoice/Factory/createInvoiceFromOrder").build().toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
-        final String[] contentTypes = { 
+        final String[] contentTypes = {
             "application/x-www-form-urlencoded"
          };
         final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);
@@ -165,16 +163,16 @@ public class InvoiceApi {
     public ModelInvoice createInvoiceReminder() throws RestClientException {
         Object postBody = null;
         String path = UriComponentsBuilder.fromPath("/Invoice/Factory/createInvoiceReminder").build().toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
-        final String[] contentTypes = { 
+        final String[] contentTypes = {
             "application/x-www-form-urlencoded"
          };
         final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);
@@ -203,7 +201,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -238,12 +236,12 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/duplicate").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -277,14 +275,14 @@ public class InvoiceApi {
             throw new HttpClientErrorException(HttpStatus.BAD_REQUEST, "Missing the required parameter 'invoiceObjectName' when calling getInvoiceAndReminderAmount");
         }
         String path = UriComponentsBuilder.fromPath("/Invoice/Factory/getTotalInvoiceReminderAndInvoiceAmount").build().toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
         queryParams.putAll(apiClient.parameterToMultiValueMap(null, "invoice[id]", invoiceId));
         queryParams.putAll(apiClient.parameterToMultiValueMap(null, "invoice[objectName]", invoiceObjectName));
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -320,7 +318,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getPdf").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -358,14 +356,14 @@ public class InvoiceApi {
             throw new HttpClientErrorException(HttpStatus.BAD_REQUEST, "Missing the required parameter 'invoiceObjectName' when calling getInvoiceReminderAmount");
         }
         String path = UriComponentsBuilder.fromPath("/Invoice/Factory/getTotalInvoiceReminderAmount").build().toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
         queryParams.putAll(apiClient.parameterToMultiValueMap(null, "invoice[id]", invoiceId));
         queryParams.putAll(apiClient.parameterToMultiValueMap(null, "invoice[objectName]", invoiceObjectName));
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -389,10 +387,10 @@ public class InvoiceApi {
      * @return ModelInvoice
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public ModelInvoice getInvoices(Integer limit, Integer offset, List<String> embed) throws RestClientException {
+    public List<ModelInvoice> getInvoices(Integer limit, Integer offset, List<String> embed) throws RestClientException {
         Object postBody = null;
         String path = UriComponentsBuilder.fromPath("/Invoice").build().toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -400,7 +398,7 @@ public class InvoiceApi {
         queryParams.putAll(apiClient.parameterToMultiValueMap(null, "offset", offset));
         queryParams.putAll(apiClient.parameterToMultiValueMap(ApiClient.CollectionFormat.valueOf("csv".toUpperCase()), "embed", embed));
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -409,12 +407,12 @@ public class InvoiceApi {
 
         String[] authNames = new String[] { "api_key" };
 
-        ParameterizedTypeReference<ModelInvoice> returnType = new ParameterizedTypeReference<ModelInvoice>() {};
+        ParameterizedTypeReference<List<ModelInvoice>> returnType = new ParameterizedTypeReference<List<ModelInvoice>>() {};
         return apiClient.invokeAPI(path, HttpMethod.GET, queryParams, postBody, headerParams, formParams, accept, contentType, authNames, returnType);
     }
     /**
      * Get the next invoice number
-     * 
+     *
      * <p><b>200</b> - successful operation
      * <p><b>400</b> - invalid request
      * <p><b>401</b> - authentication required
@@ -433,7 +431,7 @@ public class InvoiceApi {
             throw new HttpClientErrorException(HttpStatus.BAD_REQUEST, "Missing the required parameter 'useNextNumber' when calling getNextInvoiceNumber");
         }
         String path = UriComponentsBuilder.fromPath("/Invoice/Factory/getNextInvoiceNumber").build().toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -470,16 +468,16 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/addPosition").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = params;
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
-        final String[] contentTypes = { 
+        final String[] contentTypes = {
             "application/x-www-form-urlencoded"
          };
         final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);
@@ -519,18 +517,18 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/bookAmmount").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
         queryParams.putAll(apiClient.parameterToMultiValueMap(null, "ammount", ammount));
         queryParams.putAll(apiClient.parameterToMultiValueMap(null, "date", date));
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
-        final String[] contentTypes = { 
+        final String[] contentTypes = {
             "application/x-www-form-urlencoded"
          };
         final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);
@@ -551,7 +549,7 @@ public class InvoiceApi {
     public void invoiceCalcTotalDebit() throws RestClientException {
         Object postBody = null;
         String path = UriComponentsBuilder.fromPath("/Invoice/calcTotalDebit").build().toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -585,7 +583,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/calculateDunningLevel").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -625,13 +623,13 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/changeStatus").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
         queryParams.putAll(apiClient.parameterToMultiValueMap(null, "value", value));
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -662,7 +660,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getCancled").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -698,13 +696,13 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getCheckAccountTransactionLogs").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
         queryParams.putAll(apiClient.parameterToMultiValueMap(ApiClient.CollectionFormat.valueOf("csv".toUpperCase()), "embed", embed));
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -737,13 +735,13 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getCheckAccountTransactions").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
         queryParams.putAll(apiClient.parameterToMultiValueMap(ApiClient.CollectionFormat.valueOf("csv".toUpperCase()), "embed", embed));
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -774,7 +772,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getDebit").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -808,7 +806,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getDelinquent").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -844,13 +842,13 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getDiscounts").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
         queryParams.putAll(apiClient.parameterToMultiValueMap(ApiClient.CollectionFormat.valueOf("csv".toUpperCase()), "embed", embed));
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -882,7 +880,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getDocument").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -918,12 +916,12 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getDunnings").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -956,13 +954,13 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getFeed").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
         queryParams.putAll(apiClient.parameterToMultiValueMap(ApiClient.CollectionFormat.valueOf("csv".toUpperCase()), "embed", embed));
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -993,7 +991,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getFinalInvoiceId").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -1027,7 +1025,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getIsPartiallyPaid").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -1061,7 +1059,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getLastDunningDate").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -1097,13 +1095,13 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getPartialInvoices").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
         queryParams.putAll(apiClient.parameterToMultiValueMap(ApiClient.CollectionFormat.valueOf("csv".toUpperCase()), "embed", embed));
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -1138,7 +1136,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getPositions").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -1146,7 +1144,7 @@ public class InvoiceApi {
         queryParams.putAll(apiClient.parameterToMultiValueMap(null, "offset", offset));
         queryParams.putAll(apiClient.parameterToMultiValueMap(ApiClient.CollectionFormat.valueOf("csv".toUpperCase()), "embed", embed));
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -1180,7 +1178,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getRelatedObjects").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -1209,7 +1207,7 @@ public class InvoiceApi {
     public void invoiceGetSwissEsr() throws RestClientException {
         Object postBody = null;
         String path = UriComponentsBuilder.fromPath("/Invoice/getSwissEsr").build().toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -1235,7 +1233,7 @@ public class InvoiceApi {
     public void invoiceGetSwissEsrData() throws RestClientException {
         Object postBody = null;
         String path = UriComponentsBuilder.fromPath("/Invoice/getSwissEsrData").build().toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -1271,13 +1269,13 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getTags").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
         queryParams.putAll(apiClient.parameterToMultiValueMap(ApiClient.CollectionFormat.valueOf("csv".toUpperCase()), "embed", embed));
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -1309,7 +1307,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getTax").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -1344,7 +1342,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getTaxGroupes").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -1379,7 +1377,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getTotal").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -1414,7 +1412,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getTotalCalc").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -1450,7 +1448,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/getTotalNet").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -1486,7 +1484,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/hasDiscounts").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -1520,7 +1518,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/isOrigin").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -1555,12 +1553,12 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/markAsSent").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -1602,14 +1600,14 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/refundAmmount").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
         queryParams.putAll(apiClient.parameterToMultiValueMap(null, "ammount", ammount));
         queryParams.putAll(apiClient.parameterToMultiValueMap(null, "date", date));
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -1640,7 +1638,7 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/render").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
@@ -1680,13 +1678,13 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/sendBy").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
         queryParams.putAll(apiClient.parameterToMultiValueMap(null, "sendType", sendType));
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -1699,7 +1697,7 @@ public class InvoiceApi {
         return apiClient.invokeAPI(path, HttpMethod.PUT, queryParams, postBody, headerParams, formParams, accept, contentType, authNames, returnType);
     }
     /**
-     * Create a new invoice (with / without invoice positions and discounts) 
+     * Create a new invoice (with / without invoice positions and discounts)
      * With the new version of sevdesk some models are not created by calling the model.php directly but by calling the factory.php because of better performance and flexibility.    Basically the model.php itself still constructs the model however new instances of the model are created trough the factory.php    So for example when you create a new invoice it wont be saved by a POST request with &#x27;/Invoice?para1&#x3D;&amp;...&#x27; but with the saveInvoice function in Factory.php &#x27;Voucher/Factory/saveInvoice?para1&#x3D;&#x27;
      * <p><b>201</b> - created
      * <p><b>400</b> - invalid request
@@ -1710,16 +1708,16 @@ public class InvoiceApi {
     public ModelInvoiceFactory saveInvoice(MultiValueMap<String, Object> params) throws RestClientException {
         Object postBody = null;
         String path = UriComponentsBuilder.fromPath("/Invoice/Factory/saveInvoice").build().toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = params;
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
-        final String[] contentTypes = { 
+        final String[] contentTypes = {
             "application/x-www-form-urlencoded"
          };
         final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);
@@ -1749,16 +1747,16 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/sendViaEmail").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = forms;
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
-        final String[] contentTypes = { 
+        final String[] contentTypes = {
             "application/x-www-form-urlencoded"
          };
         final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);
@@ -1788,12 +1786,12 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}/sendViaPost").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
@@ -1825,16 +1823,16 @@ public class InvoiceApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
         String path = UriComponentsBuilder.fromPath("/Invoice/{id}").buildAndExpand(uriVariables).toUriString();
-        
+
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
 
-        final String[] accepts = { 
+        final String[] accepts = {
             "application/xml", "application/json"
          };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
-        final String[] contentTypes = { 
+        final String[] contentTypes = {
             "application/x-www-form-urlencoded"
          };
         final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);

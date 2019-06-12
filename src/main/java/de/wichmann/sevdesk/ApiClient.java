@@ -48,6 +48,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectReader;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import de.wichmann.sevdesk.auth.ApiKeyAuth;
 import de.wichmann.sevdesk.auth.Authentication;
@@ -677,7 +678,9 @@ public class ApiClient
 				}
 			};
 
-			T object = mapper.readValue(responseEntity.getBody().toString(), typeReference);
+			ObjectReader reader = mapper.readerFor(typeReference).withRootName("objects");
+
+			T object = reader.readValue(responseEntity.getBody().toString());
 
 
 			statusCode = responseEntity.getStatusCode();
