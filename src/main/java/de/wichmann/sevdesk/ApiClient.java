@@ -680,8 +680,6 @@ public class ApiClient
 
 			ObjectReader reader = mapper.readerFor(typeReference).withRootName("objects");
 
-			T object = reader.readValue(responseEntity.getBody().toString());
-
 
 			statusCode = responseEntity.getStatusCode();
 			responseHeaders = responseEntity.getHeaders();
@@ -692,21 +690,24 @@ public class ApiClient
 			}
 			else if (responseEntity.getStatusCode().is2xxSuccessful())
 			{
-				if (returnType == null)
+				ParameterizedTypeReference<Void> voidType = new ParameterizedTypeReference<Void>() {};
+				if (returnType == null || returnType.equals(voidType) || requestEntity.getMethod() == HttpMethod.DELETE)
 				{
 					return null;
 				}
-				return object;
+				return reader.readValue(responseEntity.getBody().toString());
 			}
 			else
 			{
 				// The error handler built into the RestTemplate should handle 400 and 500 series errors.
-				throw new RestClientException("API returned " + statusCode + " and it wasn't handled by the RestTemplate error handler");
+				throw new RestClientException(
+						"API returned " + statusCode + " and it wasn't handled by the RestTemplate error handler");
 			}
 		}
 		catch (IOException e)
 		{
-			throw new RestClientException("IOException - Server returned " + statusCode + " and it wasn't handled by the RestTemplate error handler", e);
+			throw new RestClientException(
+					"IOException - Server returned " + statusCode + " and it wasn't handled by the RestTemplate error handler", e);
 		}
 	}
 
